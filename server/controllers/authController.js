@@ -48,8 +48,8 @@ const login = (req,res) => {
 
         }
 
-        const getUser = (req, res) => {
-    console.log(req.session)
+    const getUser = (req, res) => {
+    // console.log(req.session)
     res.status(200).json(req.session.user)
 }
 
