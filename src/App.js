@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {HashRouter} from 'react-router-dom';
 import routes from './routes';
-import Home from './components/Home';
+
 
 function App() {
   return (

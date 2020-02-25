@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
-import {updateState, resetFields, registerUser, loginUser} from '../../redux/authReducer'
+import {updateState, resetFields, registerUser, loginUser, logout} from '../../redux/authReducer'
 // import '../Authentication/Authentication.css';
 
-class Authentication extends Component {
+export default class Authentication extends Component {
     
     handleChange = e => {
         this.props.updateState({ [e.target.name]: e.target.value})
@@ -41,9 +41,9 @@ class Authentication extends Component {
                         <section>
                             <h1>Register</h1>
                             <div>
-                            <p>Username:</p>
+                            <p>Username</p>
                             <input type="text" name="username" onChange={this.handleChange}/>
-                        <p>Password:</p>
+                        <p>Password</p>
                         <input type="password" name='password' onChange={this.handleChange}/>
                         <p>Zodiac Sign</p>
                         <select id='signs'>
@@ -76,9 +76,10 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, {
-    updateState,
-    resetFields,
-    registerUser,
-    loginUser
-})(Authentication);
+// export default connect(mapStateToProps, {
+//     updateState,
+//     registerUser,
+//     resetFields,
+//     loginUser,
+//     logout
+// })(Authentication);

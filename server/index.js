@@ -15,7 +15,7 @@ const auth = require('./controllers/authController')
 massive(CONNECTION_STRING)
 .then(db => {
     app.set('db',db)
-    console.log('Hooray! Server is running!')
+    console.log('Working!')
 })
 .catch(error => {
     console.log('Oopsies, error occurred!')
@@ -39,7 +39,5 @@ app.post('/auth/register');
 app.post('/auth/login');
 app.get('/auth/logout');
 
-//login
 
-
-app.listen(SERVER_PORT, () => console.log(`Server is running on ${SERVER_PORT}`))
+app.listen(SERVER_PORT, () => console.log(`Hooray! Server is running on ${SERVER_PORT}!`))
