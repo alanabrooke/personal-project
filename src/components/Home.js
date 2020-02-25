@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import NavBar from './navBar';
 import { connect } from 'react-redux';
+import Authentication from './Authentication';
 
-class Home extends Component {
+export default class Home extends Component {
     componentDidMount() {
     }
  
@@ -10,7 +10,7 @@ class Home extends Component {
     render() {      
         return(
         <div>
-        <h1>Zodigames</h1>
+        <Authentication />
         </div>
     )
 

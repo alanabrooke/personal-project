@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
+import {updateState, resetFields, registerUser, loginUser} from '../redux/authReducer'
 
 class Authentication extends Component {
     
@@ -44,9 +45,24 @@ class Authentication extends Component {
                         <p>Password:</p>
                         <input type="password" name='password' onChange={this.handleChange}/>
                     </div>
-                    <Link to='/home'><button onClick={this.handleClickRegister}>Register</button></Link>
+                    <Link to='/Home'><button onClick={this.handleClickRegister}>Register</button></Link>
                 </section>
             </div>
         )
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        username: state.authReducer.username,
+        password: state.authReducer.password,
+        zodiac_id: state.authReducer.zodiac_id
+    }
+}
+
+export default connect(mapStateToProps, {
+    updateState,
+    resetFields,
+    registerUser,
+    loginUser
+})(Authentication);
