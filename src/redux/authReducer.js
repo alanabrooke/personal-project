@@ -8,7 +8,7 @@ const initialState = {
     loading: false
 }
 
-//all constants
+//constants
 const UPDATE_STATE = 'UPDATE_STATE';
 const REGISTER_USER = 'REGISTER_USER';
 const LOGIN_USER = 'LOGIN_USER';
@@ -116,5 +116,7 @@ export default function authReducer(state = initialState, action) {
                 loading: false,
                 user: payload.data
             }
+        default: 
+        return state;
     }
 }

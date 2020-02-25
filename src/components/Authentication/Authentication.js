@@ -4,27 +4,27 @@ import { connect } from 'react-redux'
 import {updateState, resetFields, registerUser, loginUser, logout} from '../../redux/authReducer'
 // import '../Authentication/Authentication.css';
 
-export default class Authentication extends Component {
+class Authentication extends Component {
     
-    handleChange = e => {
+    handleChanges = e => {
         this.props.updateState({ [e.target.name]: e.target.value})
     }
-
-    handleClickRegister = () => {
-        this.props.registerUser(this.props.username, this.props.password, this.props.zodiac_id).then(() => {
-            this.props.loginUser(this.props.username, this.props.password, this.props.zodiac_id)
-        }).catch(error => {
-            console.log(error)
-        })
-    }
-
+    
     handleClickLogin = () => {
         this.props.loginUser(this.props.username, this.props.password).then(() => {
         }).catch(error => {
             console.log(error)
         })
     }
-
+    
+        handleClickRegister = () => {
+            this.props.registerUser(this.props.username, this.props.password, this.props.zodiac_id).then(() => {
+                this.props.loginUser(this.props.username, this.props.password, this.props.zodiac_id)
+            }).catch(error => {
+                console.log(error)
+            })
+        }
+    
     render() {
         return(
             <div>
@@ -32,9 +32,9 @@ export default class Authentication extends Component {
                     <h1>Login</h1>
                     <div>
                         <p>Username:</p>
-                        <input type="text" name="username" onChange={this.handleChange}/>
+                        <input type="text" name="username" onChange={this.handleChanges}/>
                         <p>Password:</p>
-                        <input type="password" name='password' onChange={this.handleChange}/>
+                        <input type="password" name='password' onChange={this.handleChanges}/>
                         </div>
                         <Link to='/Home'><button onClick={this.handleClickLogin}>Login</button></Link>
                         </section>
@@ -42,9 +42,9 @@ export default class Authentication extends Component {
                             <h1>Register</h1>
                             <div>
                             <p>Username</p>
-                            <input type="text" name="username" onChange={this.handleChange}/>
+                            <input type="text" name="username" onChange={this.handleChanges}/>
                         <p>Password</p>
-                        <input type="password" name='password' onChange={this.handleChange}/>
+                        <input type="password" name='password' onChange={this.handleChanges}/>
                         <p>Zodiac Sign</p>
                         <select id='signs'>
                             <option>Aries</option>
@@ -61,7 +61,7 @@ export default class Authentication extends Component {
                             <option>Pisces</option>
                         </select>
                         </div>
-                        <Link to='/Home'><button onClick={this.handleClickRegister}>Register</button></Link>
+                        <Link to='/'><button onClick={this.handleClickRegister}>Register</button></Link>
                         </section>
                         </div>
         )
@@ -76,10 +76,10 @@ const mapStateToProps = state => {
     }
 }
 
-// export default connect(mapStateToProps, {
-//     updateState,
-//     registerUser,
-//     resetFields,
-//     loginUser,
-//     logout
-// })(Authentication);
+export default connect(mapStateToProps, {
+    updateState,
+    registerUser,
+    resetFields,
+    loginUser,
+    logout
+})(Authentication);
