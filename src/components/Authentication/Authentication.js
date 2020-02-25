@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
-import {updateState, resetFields, registerUser, loginUser, logout} from '../../redux/authReducer'
+import {updateState, resetFields, registerUser, loginUser} from '../../redux/authReducer'
 // import '../Authentication/Authentication.css';
 
 class Authentication extends Component {
     
     handleChanges = e => {
         this.props.updateState({ [e.target.name]: e.target.value})
+        // console.log(e.target.value)
     }
     
     handleClickLogin = () => {
@@ -36,10 +37,10 @@ class Authentication extends Component {
                         <p>Password:</p>
                         <input type="password" name='password' onChange={this.handleChanges}/>
                         </div>
-                        <Link to='/Home'><button onClick={this.handleClickLogin}>Login</button></Link>
+                        <Link to='/Selection'><button onClick={this.handleClickLogin}>Login</button></Link>
                         </section>
                         <section>
-                            <h1>Register</h1>
+                            <h1>Don't have an account yet? Register here!</h1>
                             <div>
                             <p>Username</p>
                             <input type="text" name="username" onChange={this.handleChanges}/>
@@ -61,7 +62,7 @@ class Authentication extends Component {
                             <option>Pisces</option>
                         </select>
                         </div>
-                        <Link to='/'><button onClick={this.handleClickRegister}>Register</button></Link>
+                        <Link to='/Selection'><button onClick={this.handleClickRegister}>Register</button></Link>
                         </section>
                         </div>
         )
@@ -80,6 +81,5 @@ export default connect(mapStateToProps, {
     updateState,
     registerUser,
     resetFields,
-    loginUser,
-    logout
+    loginUser
 })(Authentication);
