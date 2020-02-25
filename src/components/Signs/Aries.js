@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {Link} from 'react-router-dom';
 
 
 export default class Aries extends Component {
@@ -8,6 +8,7 @@ export default class Aries extends Component {
         return(
             <div>
                 <h1>Aries</h1>
+                <Link to='/selection'><button>Back to Selection</button></Link>
                 </div>
         
         )

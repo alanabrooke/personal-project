@@ -62,7 +62,7 @@ class Authentication extends Component {
                             <option>Pisces</option>
                         </select>
                         </div>
-                        <Link to='/Selection'><button onClick={this.handleClickRegister}>Register</button></Link>
+                        <Link to='/selection'><button onClick={this.handleClickRegister}>Register</button></Link>
                         </section>
                         </div>
         )
