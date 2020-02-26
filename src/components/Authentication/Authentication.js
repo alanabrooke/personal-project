@@ -37,10 +37,10 @@ class Authentication extends Component {
                         <input type="text" name="username" onChange={this.handleChange}/>
                         <h4>Password</h4>
                         <input type="password" name='password' onChange={this.handleChange}/>
+                        </section>
+                        </div>
                         <div  id='authButton' >
                         <Link to='/Selection'><button onClick={this.handleClickLogin}>Submit</button></Link>
-                        </div>
-                        </section>
                         </div>
                             <h3>Don't have an account yet? Register here!</h3>
                             <div id='loginRegister'>
@@ -49,8 +49,9 @@ class Authentication extends Component {
                             <input type="text" name="username" onChange={this.handleChange}/>
                         <h4>Password</h4>
                         <input type="password" name='password' onChange={this.handleChange}/>
+                        <div></div>
                         <h4>Zodiac Sign</h4>
-                        <div  id='signs'>
+                        <div  id='signs' >
                         <select onChange={this.handleChange} name="zodiac">
                             <option value={1}>Aries</option>
                             <option value={2}>Taurus</option>
@@ -65,7 +66,7 @@ class Authentication extends Component {
                             <option value={11}>Aquarius</option>
                             <option value={12}>Pisces</option>
                         </select>
-                            </div>
+                        </div>
                         </section>
                         </div>
                         <div  id='authButton' >
