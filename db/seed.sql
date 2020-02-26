@@ -18,7 +18,7 @@ CREATE TABLE genre (
     zodiac_id INT NOT NULL
 )
 
--- getInfo (JOIN) ///////////////
+
 -- SELECT genre.genre_name, genre.zodiac_id, zodiac.zodiac_name, zodiac.traits, zodiac.dates
 -- FROM genre
 -- INNER JOIN zodiac

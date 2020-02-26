@@ -2,11 +2,11 @@ import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
 import {updateState, resetFields, registerUser, loginUser} from '../../redux/authReducer'
-// import '../Authentication/Authentication.css';
+import '../Authentication/Authentication.css';
 
 class Authentication extends Component {
     
-    handleChanges = e => {
+    handleChange = e => {
         this.props.updateState({ [e.target.name]: e.target.value})
         // console.log(e.target.value)
     }
@@ -29,41 +29,48 @@ class Authentication extends Component {
     render() {
         return(
             <div>
+                    <h1>Zodigames</h1>
+                    <h3>Login</h3>
+                    <div  id='loginRegister'>
                 <section>
-                    <h1>Login</h1>
-                    <div>
-                        <p>Username:</p>
-                        <input type="text" name="username" onChange={this.handleChanges}/>
-                        <p>Password:</p>
-                        <input type="password" name='password' onChange={this.handleChanges}/>
+                        <h4>Username</h4>
+                        <input type="text" name="username" onChange={this.handleChange}/>
+                        <h4>Password</h4>
+                        <input type="password" name='password' onChange={this.handleChange}/>
+                        <div  id='authButton' >
+                        <Link to='/Selection'><button onClick={this.handleClickLogin}>Submit</button></Link>
                         </div>
-                        <Link to='/Selection'><button onClick={this.handleClickLogin}>Login</button></Link>
                         </section>
+                        </div>
+                            <h3>Don't have an account yet? Register here!</h3>
+                            <div id='loginRegister'>
                         <section>
-                            <h1>Don't have an account yet? Register here!</h1>
-                            <div>
-                            <p>Username</p>
-                            <input type="text" name="username" onChange={this.handleChanges}/>
-                        <p>Password</p>
-                        <input type="password" name='password' onChange={this.handleChanges}/>
-                        <p>Zodiac Sign</p>
-                        <select id='signs'>
-                            <option>Aries</option>
-                            <option>Taurus</option>
-                            <option>Gemini</option>
-                            <option>Cancer</option>
-                            <option>Leo</option>
-                            <option>Virgo</option>
-                            <option>Libra</option>
-                            <option>Scorpio</option>
-                            <option>Sagittarius</option>
-                            <option>Capricorn</option>
-                            <option>Aquarius</option>
-                            <option>Pisces</option>
+                            <h4>Username</h4>
+                            <input type="text" name="username" onChange={this.handleChange}/>
+                        <h4>Password</h4>
+                        <input type="password" name='password' onChange={this.handleChange}/>
+                        <h4>Zodiac Sign</h4>
+                        <div  id='signs'>
+                        <select onChange={this.handleChange} name="zodiac">
+                            <option value={1}>Aries</option>
+                            <option value={2}>Taurus</option>
+                            <option value={3}>Gemini</option>
+                            <option value={4}>Cancer</option>
+                            <option value={5}>Leo</option>
+                            <option value={6}>Virgo</option>
+                            <option value={7}>Libra</option>
+                            <option value={8}>Scorpio</option>
+                            <option value={9}>Sagittarius</option>
+                            <option value={10}>Capricorn</option>
+                            <option value={11}>Aquarius</option>
+                            <option value={12}>Pisces</option>
                         </select>
-                        </div>
-                        <Link to='/selection'><button onClick={this.handleClickRegister}>Register</button></Link>
+                            </div>
                         </section>
+                        </div>
+                        <div  id='authButton' >
+                        <Link to='/selection'><button onClick={this.handleClickRegister}>Register</button></Link>
+                        </div>
                         </div>
         )
     }

@@ -10,7 +10,7 @@ export default class Scorpio extends Component {
         return(
             <div>
                 <h1>Scorpio</h1>
-                <Link to='/selection'><button>Back to Selection</button></Link>
+                <Link to='/selection'><button id='backButton'>Back to Selection</button></Link>
             </div>
         )
     }

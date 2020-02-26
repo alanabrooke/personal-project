@@ -1,0 +1,33 @@
+$primaryBtn : rgb(165, 45, 245);
+
+button {
+    background-color: $primaryBtn;
+    &:hover {
+        background-color: white;
+    }
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 6px;
+}
+// #topButtons {
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+
+}
+button {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    align-items: center;
+
+}
+#backButton{
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}

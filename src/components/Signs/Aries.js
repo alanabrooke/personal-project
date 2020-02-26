@@ -7,8 +7,8 @@ export default class Aries extends Component {
     render() {
         return(
             <div>
-                <h1>Aries</h1>
-                <Link to='/selection'><button>Back to Selection</button></Link>
+                <h2>Aries</h2>
+                <Link to='/selection'><button id='backButton'> Back to Selection</button></Link>
                 </div>
         
         )

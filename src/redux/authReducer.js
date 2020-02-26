@@ -3,7 +3,7 @@ import axios from 'axios';
 const initialState = {
     username: '',
     password: '',
-    zodiac_id: '',
+    zodiac_id: null,
     user: [],
     loading: false
 }
@@ -65,6 +65,7 @@ export default function authReducer(state = initialState, action) {
     const {type, payload} = action;
     switch(type) {
         case UPDATE_STATE: 
+        console.log(payload)
         return {
             ...state,
             ...payload
