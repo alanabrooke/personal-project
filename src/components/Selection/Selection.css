@@ -7,13 +7,16 @@ button {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 6px;
+  width: 200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 button:hover {
   background-color: white;
 }
 
-#topButtons {
+#allButtons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,19 +26,9 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#bottomButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px;
 }
 
 #backButton {
@@ -47,12 +40,22 @@ button:hover {
           justify-content: center;
 }
 
-h2 {
+#back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+h2, h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: blue;
 }
 /*# sourceMappingURL=Selection.css.map */

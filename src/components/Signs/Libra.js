@@ -9,8 +9,10 @@ export default class Libra extends Component {
     render() {
         return(
             <div>
-                <h1>Libra</h1>
-                <Link to='/selection'><button id='backButton'>Back to Selection</button></Link>
+            <h2>Libra</h2>
+                <div id='back'>
+            <Link to='/selection'><button>Back to Selection</button></Link>
+            </div>
             </div>
         )
     }

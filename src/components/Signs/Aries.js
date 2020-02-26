@@ -7,10 +7,12 @@ export default class Aries extends Component {
     render() {
         return(
             <div>
-                <h2>Aries</h2>
-                <Link to='/selection'><button id='backButton'> Back to Selection</button></Link>
-                </div>
-        
+            <h2>Aries</h2>
+                <div id='back'>
+            <Link to='/selection'><button>Back to Selection</button></Link>
+            </div>
+            </div>
+
         )
     }
 }
