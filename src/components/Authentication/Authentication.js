@@ -52,7 +52,8 @@ class Authentication extends Component {
                         <div></div>
                         <h4>Zodiac Sign</h4>
                         <div  id='signs' >
-                        <select onChange={this.handleChange} name="zodiac">
+                        <select onChange={this.handleChange} name="zodiac_id">
+                            <option>Please select your sign</option>
                             <option value={1}>Aries</option>
                             <option value={2}>Taurus</option>
                             <option value={3}>Gemini</option>

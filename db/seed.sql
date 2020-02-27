@@ -19,10 +19,20 @@ CREATE TABLE genre (
 )
 
 
--- SELECT genre.genre_name, genre.zodiac_id, zodiac.zodiac_name, zodiac.traits, zodiac.dates
+-- INSERT INTO users (username, password, zodiac_id)
+-- VALUES ('alanaBrooke', 'Badabing', 2);
+
+
+-- CREATE TABLE users
+-- (
+--   user_id SERIAL PRIMARY KEY,
+--   username VARCHAR(50) UNIQUE,
+--   password TEXT,
+--   zodiac_id INT REFERENCES zodiac
+-- (zodiac_id)
+-- );
+
+-- SELECT genre.genre_name, genre.zodiac_id, zodiac.zodiac_name, zodiac.dates, zodiac.traits
 -- FROM genre
 -- INNER JOIN zodiac
 -- ON genre.zodiac_id = zodiac.zodiac_id;
-
--- INSERT INTO users (username, password, zodiac_id)
--- VALUES (alanaBrooke, Badabing, 2);

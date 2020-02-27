@@ -26,7 +26,7 @@ export const updateState = e => {
 export const registerUser = (username,password, zodiac_id) => {
 return {
     type: REGISTER_USER,
-    payload: axios.post('auth/register', {
+    payload: axios.post('/auth/register', {
         username,
         password,
         zodiac_id
@@ -41,7 +41,7 @@ export const resetFields = () => {
 
 export const loginUser = (username,password) => {
    return { type: LOGIN_USER,
-    payload: axios.post('auth/login', {
+    payload: axios.post('/auth/login', {
         username,
         password
     })
@@ -50,7 +50,7 @@ export const loginUser = (username,password) => {
 export const logout = ()  => {
     return {
         type: LOGOUT_USER,
-        payload: axios.get('auth/logout')
+        payload: axios.get('/auth/logout')
     }
 }
 

@@ -1,61 +1,44 @@
 const bcrypt = require('bcryptjs');
 
-const register = (req,res) => {
-    const db = req.app.get('db')
-    const {username, password, zodiac_id} = req.body;
-    bcrypt.hash(password, 15)
-    .then((hash) => {
-        db.authentication.registerUser([username, hash, zodiac_id])
-    .then(user => {
-        res.sendStatus(200)
-    })
-    .catch(error => {
-        console.log(error)
-        res.status(500).json('An error has occurred!')
-    }) 
-    })
+
+async function register(req, res) {
+  const { username, password, zodiac_id } = req.body;
+  const db = req.app.get('db');
+
+
+  const result = await db.auth.getUser(username);
+  if (result.length !== 0) return res.status(409).json('username taken');
+
+  const hash = bcrypt.hashSync(password, 10);
+  const registeredUser = await db.auth.registerUser(username, hash, zodiac_id);
+  
+  const user = registeredUser[0];
+  req.session.user = { id: user.user_id, username: user.username, zodiac_id: zodiac_id}
+  return res.status(201).json(req.session.user);
 }
 
-const login = (req,res) => {
-    const db = req.app.get('db')
-    const {username, password} = req.body;
-        db.authentication.getUser(username)
-        .then(user => {
-            if(user.length === 0) {
-                res.status(400).json('User does not exist.')
-            } else {
-                bcrypt.compare(password,user[0].password)
-                .then(isEqual => {
-                    if(isEqual) {
-                        const {user_id, username, zodiac_id} = user[0]
-                        req.session.user = {
-                            id : user_id,
-                            username : username,
-                            zodiac_id : zodiac_id
-                        }
-                        res.status(200).json(username)
-                    } else {
-                            res.status(403).json('Incorrect username or password. Please try again.')
-                        }
-                    })
-                }
-            }
-        )}
-    
-        const logout = (req,res) => {
-            req.session.destroy();
-            res.sendStatus(200)
+async function login(req, res) {
+  const { username, password } = req.body;
+  const db = req.app.get('db');
 
-        }
-
-    const getUser = (req, res) => {
-    // console.log(req.session)
-    res.status(200).json(req.session.user)
+  const foundUser = await db.get_user(username);
+  if (foundUser.length === 0) return res.status(409).json('User not found! Please try again.');
+  const user = foundUser[0];
+  const isAuthenticated = await bcrypt.compare(password, user.hash);
+  if (isAuthenticated === true) {
+    req.session.user = { id: user.user_id, username: user.username, zodiac_id: user.zodiac_id };
+    return res.status(200).json(req.session.user);
+  }
+  return res.status(403).json('Incorrect username or password. Please try again.');
 }
 
-        module.exports = {
-            register, 
-            login,
-            logout,
-            getUser
-        }
+function logout(req, res) {
+  req.session.destroy();
+  res.sendStatus(200);
+}
+
+module.exports = {
+  register,
+  login,
+  logout
+}
