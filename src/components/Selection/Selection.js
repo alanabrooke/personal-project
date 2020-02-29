@@ -1,27 +1,26 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './Selection.css';
-
-//signs
-import Aries from '../Signs/Aries';
-import Taurus from '../Signs/Taurus';
-import Gemini from '../Signs/Gemini';
-import Cancer from '../Signs/Cancer';
-import Leo from '../Signs/Leo';
-import Virgo from '../Signs/Virgo';
-import Libra from '../Signs/Libra';
-import Scorpio from '../Signs/Scorpio';
-import Sagittarius from '../Signs/Sagittarius';
-import Capricorn from '../Signs/Capricorn';
-import Aquarius from '../Signs/Aquarius';
-import Pisces from '../Signs/Pisces';
+import { getSuggestions } from '../../redux/suggestionsReducer';
+import {connect} from 'react-redux';
 
 
 
-export default class Selection extends Component {
+
+ class Selection extends Component {
+
+      componentDidMount() {
+        this.props.getSuggestions()
+      }
 
     render() {
+        const mappedSuggestions = this.props.suggestions.map((val, index) => {
         return(
+            <h1>
+                testinggggggg
+            </h1>
+        )})
+        return (
             <div>
                 <h1>
                     Choose your sign!
@@ -43,9 +42,22 @@ export default class Selection extends Component {
                 </div>
             </div>
         
+          )  
+        }
+}
         
-        )
-    }
+
+
+
+// export { Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces }
+
+const mapStateToProps = state => {
+return {
+    suggestions: state.suggestionsReducer.suggestions,
+    poster: state.suggestionsReducer.poster
+}
 }
 
-export { Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces }
+export default connect(mapStateToProps, {
+getSuggestions,
+})(Selection);

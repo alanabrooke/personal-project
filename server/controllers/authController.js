@@ -17,19 +17,49 @@ async function register(req, res) {
   return res.status(201).json(req.session.user);
 }
 
-async function login(req, res) {
-  const { username, password } = req.body;
-  const db = req.app.get('db');
+// async function login(e) {
+//   if (e) e.preventDefault();
+//   const {username, password } = this.state;
+//   try {
+//     const res = await axios.post('/auth/login', { username, password });
+//     if (res.data.loggedIn) this.props.history.push('/selection');
+//   } catch (e) {
+//     alert('Login failed. Please try again.');
+//   }
+//   if (isMatching) {
+//     console.log('matching');
+//   } else {
+//     console.log('not matching')
+//   }
+// }
 
-  const foundUser = await db.get_user(username);
-  if (foundUser.length === 0) return res.status(409).json('User not found! Please try again.');
-  const user = foundUser[0];
-  const isAuthenticated = await bcrypt.compare(password, user.hash);
-  if (isAuthenticated === true) {
-    req.session.user = { id: user.user_id, username: user.username, zodiac_id: user.zodiac_id };
-    return res.status(200).json(req.session.user);
+const login = async (req, res) => {
+  var { username, password } = req.body;
+  var db = req.app.get('db');
+
+  let foundUser = await db.getUser(username);
+  if(!foundUser){
+      res
+      .status(401)
+      .send('User not found');
+  }else{
+      var user = foundUser[0];
+      var { username, hash } = user;
+      var isAuthenticated = bcrypt.compareSync(password, hash);
+      if(!isAuthenticated){
+          res
+          .status(403)
+          .send('Incorrect username or password');
+      }else{
+          req.session.user = {
+              user_id,
+              username
+          }
+          res
+          .status(200)
+          .send(req.session.user)
+      }
   }
-  return res.status(403).json('Incorrect username or password. Please try again.');
 }
 
 function logout(req, res) {

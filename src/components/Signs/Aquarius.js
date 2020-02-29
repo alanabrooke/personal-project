@@ -1,13 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import '../Selection/Selection.css'
-
-
-
 
 export default class Aquarius extends Component {
-
-
 
     render() {
         return(
