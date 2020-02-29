@@ -5,13 +5,13 @@ import {updateState, resetFields, registerUser, loginUser} from '../../redux/aut
 import '../Authentication/Authentication.css';
 
 class Authentication extends Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         username: '',
-    //         password: ''
-    //     }
-    // }
+    constructor() {
+        super();
+        this.state = {
+            username: '',
+            password: ''
+        }
+    }
     
     handleChange = e => {
         this.props.updateState({ [e.target.name]: e.target.value})
@@ -28,7 +28,7 @@ class Authentication extends Component {
     
         handleClickRegister = () => {
             this.props.registerUser(this.props.username, this.props.password, this.props.zodiac_id).then(() => {
-                this.props.loginUser(this.props.username, this.props.password, this.props.zodiac_id)
+                // this.props.loginUser(this.props.username, this.props.password, this.props.zodiac_id)
             }).catch(error => {
                 console.log(error)
             })

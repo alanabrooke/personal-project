@@ -5,21 +5,19 @@ import { getSuggestions } from '../../redux/suggestionsReducer';
 import {connect} from 'react-redux';
 
 
+ export default class Selection extends Component {
 
-
- class Selection extends Component {
-
-      componentDidMount() {
-        this.props.getSuggestions()
-      }
+    //   componentDidMount() {
+    //     this.props.getSuggestions()
+    //   }
 
     render() {
-        const mappedSuggestions = this.props.suggestions.map((val, index) => {
-        return(
-            <h1>
-                testinggggggg
-            </h1>
-        )})
+        // const mappedSuggestions = this.props.suggestions.map((val, index) => {
+        // return(
+        //     <h1>
+        //         testinggggggg
+        //     </h1>
+        // )})
         return (
             <div>
                 <h1>
@@ -51,13 +49,13 @@ import {connect} from 'react-redux';
 
 // export { Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces }
 
-const mapStateToProps = state => {
-return {
-    suggestions: state.suggestionsReducer.suggestions,
-    poster: state.suggestionsReducer.poster
-}
-}
+// const mapStateToProps = state => {
+// return {
+//     suggestions: state.suggestionsReducer.suggestions,
+//     poster: state.suggestionsReducer.poster
+// }
+// }
 
-export default connect(mapStateToProps, {
-getSuggestions,
-})(Selection);
+// export default connect(mapStateToProps, {
+// getSuggestions,
+// })(Selection);

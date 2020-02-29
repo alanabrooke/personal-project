@@ -12,7 +12,7 @@ const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET} = process.env;
 //controllers
 const authentication = require('./controllers/authController')
 const {getSuggestions} = require('./controllers/suggestionsController')
-const { register, login, logout } = require('./controllers/authController');
+// const { register, login, logout } = require('./controllers/authController');
 
 
 massive(CONNECTION_STRING)
@@ -42,7 +42,7 @@ app.use(
 //auth
 app.post('/auth/register', authentication.register);
 app.post('/auth/login', authentication.login);
-app.get('/auth/logout', authentication.logout);
+app.post('/auth/logout', authentication.logout);
 // app.get('/auth/user');
 
 //suggestions
