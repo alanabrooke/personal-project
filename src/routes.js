@@ -24,7 +24,7 @@ export default (
     <Switch>
         <Route component={Home} exact path='/' />
         <Route component={Selection} exact path='/selection'/>
-        <Route component={Aries} path='/selection/:id' id={1}/>
+        <Route component={Aries} path='/selection/Aries' />
         <Route component={Taurus} path='/selection/Taurus'/>
         <Route component={Gemini} path='/selection/Gemini'/>
         <Route component={Cancer} path='/selection/Cancer'/>

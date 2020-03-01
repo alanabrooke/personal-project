@@ -29,7 +29,7 @@ const register = (req, res) => {
 const login = (req, res) => {
     const db = req.app.get('db')
     const {username, password} = req.body;
-    db.get_User(username).then(user => {
+    db.getUser(username).then(user => {
         if(user.length === 0) {
             res.status(400).json('user does not exist')
         } else {
@@ -57,7 +57,7 @@ const logout = (req, res) => {
 }
 
 
-const get_User = (req,res) => {
+const getUser = (req,res) => {
     console.log(req.session)
     res.status(200).json(req.session.user)
 }
@@ -66,6 +66,6 @@ const get_User = (req,res) => {
 module.exports = {
     register,
     login,
-    get_User,
+    getUser,
     logout
 }
