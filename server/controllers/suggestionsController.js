@@ -11,7 +11,7 @@
 // }
 
 async function getSuggestions(req, res) {
-    console.log("getSuggestions in suggestionsCont")
+    // console.log("getSuggestions in suggestionsCont")
     const db = req.app.get('db')
     const suggestions = await db.getSuggestions();
 

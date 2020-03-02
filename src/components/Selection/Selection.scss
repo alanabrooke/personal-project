@@ -18,13 +18,16 @@ nav {
     width: 100vw;
     display:flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
-#logout {
+#logout, #logoutLink {
     background-color: transparent;
     border: none;
     display: flex;
     align-self: center;
-
+    margin-right: 50px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #allButtons {
     display: flex;

@@ -15,13 +15,13 @@ class Selection extends Component {
         // const mappedSuggestions = this.props.suggestions.map((val, index) => {
         // return(
         //     <h1>
-        //         testinggggggg
+        //         testinggggg
         //     </h1>
         // )})
         return (
                 <div>
             <nav>
-                <Link to='/'><button id='logout'>Logout</button></Link>
+                <Link to='/' id='logoutLink'><button id='logout'>Logout</button></Link>
             </nav>
                 <h1>
                     Choose your sign!
@@ -53,7 +53,7 @@ class Selection extends Component {
 
 const mapStateToProps = state => {
 return {
-    suggestions: state.suggestionsReducer.suggestions,
+    suggestions: state.suggestionsReducer.suggestions
 }
 }
 

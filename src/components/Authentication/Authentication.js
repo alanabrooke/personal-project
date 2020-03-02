@@ -20,13 +20,14 @@ class Authentication extends Component {
     
     handleClickLogin = () => {
         this.props.loginUser(this.props.username, this.props.password).then(() => {
+            this.props.history.push('/selection')
         }).catch(error => {
             console.log(error)
         })
  
     }
     
-        handleClickRegister = () => {
+    handleClickRegister = () => {
             this.props.registerUser(this.props.username, this.props.password, this.props.zodiac_id).then(() => {
                 // this.props.loginUser(this.props.username, this.props.password, this.props.zodiac_id)
             }).catch(error => {
@@ -49,7 +50,7 @@ class Authentication extends Component {
                         </section>
                         </div>
                         <div  id='authButton' >
-                        <Link to='/Selection'><button onClick={this.handleClickLogin}>Submit</button></Link>
+                        <button onClick={this.handleClickLogin}>Submit</button>
                         </div>
                             <h3>Don't have an account yet? Register here!</h3>
                             <div id='loginRegister'>

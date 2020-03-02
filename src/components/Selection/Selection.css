@@ -26,9 +26,12 @@ nav {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#logout {
+#logout, #logoutLink {
   background-color: transparent;
   border: none;
   display: -webkit-box;
@@ -36,6 +39,9 @@ nav {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  margin-right: 50px;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #allButtons {
