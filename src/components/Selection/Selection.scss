@@ -1,7 +1,7 @@
-// $primaryBtn : rgb(165, 45, 245);
+$primaryBtn : rgb(165, 45, 245);
 
-button {
-    background-color: $primaryBtn;
+img {
+    // background-color: $primaryBtn;
     &:hover {
         background-color: white;
     }
@@ -9,7 +9,7 @@ button {
     display: flex;
     justify-content: space-around;
     border-radius: 6px;
-    width: 200px;
+    width: 100px;
     flex-wrap: wrap;
 }
 nav {

@@ -29,18 +29,18 @@ class Selection extends Component {
                 </h1>
                 <div id='allButtons'>
            
-                <Link to='/selection/aries'><button>Aries</button></Link>
-                <Link to='/selection/taurus'><button>Taurus</button></Link>
-                <Link to='/selection/gemini'><button>Gemini</button></Link>
-                <Link to='/selection/cancer'><button>Cancer</button></Link>
-                <Link to='/selection/leo'><button>Leo</button></Link>
-                <Link to='/selection/virgo'><button>Virgo</button></Link>
-                <Link to='/selection/libra'><button>Libra</button></Link>
-                <Link to='/selection/scorpio'><button>Scorpio</button></Link>
-                <Link to='/selection/sagittarius'><button>Sagittarius</button></Link>
-                <Link to='/selection/capricorn'><button>Capricorn</button></Link>
-                <Link to='/selection/aquarius'><button>Aquarius</button></Link>
-                <Link to='/selection/pisces'><button>Pisces</button></Link>
+                <Link to='/selection/aries'><img src='https://image.flaticon.com/icons/svg/2647/2647331.svg'/></Link>
+                <Link to='/selection/taurus'><img src= 'https://image.flaticon.com/icons/svg/2647/2647449.svg'/></Link>
+                <Link to='/selection/gemini'><img src= 'https://image.flaticon.com/icons/svg/2647/2647386.svg'/></Link>
+                <Link to='/selection/cancer'><img src= 'https://image.flaticon.com/icons/svg/2647/2647357.svg'/></Link>
+                <Link to='/selection/leo'><img src= 'https://image.flaticon.com/icons/svg/2647/2647393.svg'/></Link>
+                <Link to='/selection/virgo'><img src= 'https://image.flaticon.com/icons/svg/2647/2647451.svg'/></Link>
+                <Link to='/selection/libra'><img src= 'https://image.flaticon.com/icons/svg/2647/2647398.svg'/></Link>
+                <Link to='/selection/scorpio'><img src= 'https://image.flaticon.com/icons/svg/2647/2647427.svg'/></Link>
+                <Link to='/selection/sagittarius'><img src= 'https://image.flaticon.com/icons/svg/2647/2647420.svg'/></Link>
+                <Link to='/selection/capricorn'><img src= 'https://image.flaticon.com/icons/svg/2647/2647361.svg'/></Link>
+                <Link to='/selection/aquarius'><img src= 'https://image.flaticon.com/icons/svg/2647/2647325.svg'/></Link>
+                <Link to='/selection/pisces'><img src= 'https://image.flaticon.com/icons/svg/2647/2647411.svg'/></Link>
                 </div>
             </div>
         
