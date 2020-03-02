@@ -2,7 +2,7 @@ import axios from 'axios'
 require('dotenv').config()
 
 const initialState = {
-    suggestions: ['alaalla','hrfdh']
+    suggestions: []
 }
 
 const GET_SUGGESTIONS = 'GET_SUGGESTIONS';

@@ -10,7 +10,6 @@ class Selection extends Component {
       componentDidMount() {
         this.props.getSuggestions()
       }
-
     render() {
         // //////////
         // const mappedSuggestions = this.props.suggestions.map((val, index) => {
@@ -20,7 +19,10 @@ class Selection extends Component {
         //     </h1>
         // )})
         return (
-            <div>
+                <div>
+            <nav>
+                <Link to='/'><button id='logout'>Logout</button></Link>
+            </nav>
                 <h1>
                     Choose your sign!
                     (Don't forget to check your sun, moon, and rising!)
@@ -46,8 +48,6 @@ class Selection extends Component {
         }
 }
         
-
-
 
 // export { Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces }
 

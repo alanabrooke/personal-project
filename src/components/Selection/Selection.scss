@@ -1,4 +1,4 @@
-$primaryBtn : rgb(165, 45, 245);
+// $primaryBtn : rgb(165, 45, 245);
 
 button {
     background-color: $primaryBtn;
@@ -22,6 +22,8 @@ nav {
 #logout {
     background-color: transparent;
     border: none;
+    display: flex;
+    align-self: center;
 
 }
 #allButtons {
