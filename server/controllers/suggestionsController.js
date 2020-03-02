@@ -1,8 +1,21 @@
-const getSuggestions = (req, res) => {
+// const getSuggestions = (req, res) => {
+//     console.log("getSuggestions in suggestionsCont")
+//     const db = req.app.get('db')
+//     db.getSuggestions().then(suggestions => {
+//         console.log("suggestions pulled", suggestions)
+//         res.status(200).json(suggestions)
+//     })
+// }
+// module.exports = {
+//     getSuggestions
+// }
+
+async function getSuggestions(req, res) {
+    console.log("getSuggestions in suggestionsCont")
     const db = req.app.get('db')
-    db.reviews.getSuggestions().then(suggestions => {
-        res.status(200).json(suggestions)
-    })
+    const suggestions = await db.getSuggestions();
+
+    res.status(200).json(suggestions)
 }
 module.exports = {
     getSuggestions

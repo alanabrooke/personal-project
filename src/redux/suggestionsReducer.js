@@ -2,7 +2,7 @@ import axios from 'axios'
 require('dotenv').config()
 
 const initialState = {
-    suggestions: []
+    suggestions: ['alaalla','hrfdh']
 }
 
 const GET_SUGGESTIONS = 'GET_SUGGESTIONS';
@@ -19,7 +19,7 @@ export const updateState = e => {
 export const getSuggestions = () => {
     return {
         type: GET_SUGGESTIONS,
-        payload: axios.get('/api/selection')
+        payload: axios.get('/api/suggestions')
     }
 }
 
@@ -45,7 +45,7 @@ export default function suggestionsReducer(state = initialState, action) {
             return {
                 ...state,
                 loading: false,
-                SUGGESTIONS: payload.data
+                suggestions: payload.data
             }
 
         default:

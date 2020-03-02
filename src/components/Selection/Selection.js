@@ -5,13 +5,14 @@ import { getSuggestions } from '../../redux/suggestionsReducer';
 import {connect} from 'react-redux';
 
 
- export default class Selection extends Component {
+class Selection extends Component {
 
-    //   componentDidMount() {
-    //     this.props.getSuggestions()
-    //   }
+      componentDidMount() {
+        this.props.getSuggestions()
+      }
 
     render() {
+        // //////////
         // const mappedSuggestions = this.props.suggestions.map((val, index) => {
         // return(
         //     <h1>
@@ -25,6 +26,7 @@ import {connect} from 'react-redux';
                     (Don't forget to check your sun, moon, and rising!)
                 </h1>
                 <div id='allButtons'>
+           
                 <Link to='/selection/aries'><button>Aries</button></Link>
                 <Link to='/selection/taurus'><button>Taurus</button></Link>
                 <Link to='/selection/gemini'><button>Gemini</button></Link>
@@ -49,13 +51,12 @@ import {connect} from 'react-redux';
 
 // export { Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces }
 
-// const mapStateToProps = state => {
-// return {
-//     suggestions: state.suggestionsReducer.suggestions,
-//     poster: state.suggestionsReducer.poster
-// }
-// }
+const mapStateToProps = state => {
+return {
+    suggestions: state.suggestionsReducer.suggestions,
+}
+}
 
-// export default connect(mapStateToProps, {
-// getSuggestions,
-// })(Selection);
+export default connect(mapStateToProps, {
+getSuggestions,
+})(Selection);

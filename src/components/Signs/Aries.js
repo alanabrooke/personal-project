@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-
+import {connect} from 'react-redux';
+import {updateState, getSuggestions} from '../../redux/suggestionsReducer';
 
 export default class Aries extends Component {
 
+///////////////////
     // componentDidMount() {
     //     this.props.getSuggestions()
     //   }
-
+//////////////
       render() {
           
           return(
