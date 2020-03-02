@@ -78,6 +78,7 @@ h2, h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: blue;
+  color: #9737c4;
+  text-align: center;
 }
 /*# sourceMappingURL=Selection.css.map */
