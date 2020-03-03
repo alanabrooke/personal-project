@@ -25,18 +25,20 @@ class Authentication extends Component {
             console.log(error)
             alert('Incorrect username or password. Please try again.')
         })
- 
     }
     
     handleClickRegister = () => {
-            this.props.registerUser(this.props.username, this.props.password, this.props.zodiac_id).then(() => {
-                this.props.loginUser(this.props.username, this.props.password, this.props.zodiac_id)
-            }).catch(error => {
-                console.log(error)
-            })
-            console.log(this.props.username, this.props.password, this.props.zodiac_id)
-        }
+        this.props.registerUser(this.props.username, this.props.password, this.props.zodiac_id, this.props.email).then(() => {
+            this.props.loginUser(this.props.username, this.props.password)
+        }).catch(error => {
+            console.log(error)
+        })
+        console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id)
+        alert('You have been registered! Please log in to proceed.')
+        window.location.reload();
+    }
     
+
     render() {
         return(
             <div>
@@ -52,11 +54,12 @@ class Authentication extends Component {
                         </div>
                         <div  id='authButton' >
                         <button onClick={this.handleClickLogin}>Submit</button>
-                     
                         </div>
                             <h3>Don't have an account yet? Register here!</h3>
                             <div id='loginRegister'>
                         <section>
+                        <h4>Email</h4>
+                    <input type='text' name='email' onChange={this.handleChange}/>
                             <h4>Username</h4>
                             <input type="text" name="username" onChange={this.handleChange}/>
                         <h4>Password</h4>
@@ -82,6 +85,7 @@ class Authentication extends Component {
                         </div>
                         </section>
                         </div>
+
                         <div  id='authButton' >
                         <button onClick={this.handleClickRegister}>Register</button>
                         </div>

@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const initialState = {
+    email:'',
     username: '',
     password: '',
     zodiac_id: null,
@@ -23,7 +24,7 @@ export const updateState = e => {
     }
 }
 
-export const registerUser = (username, password, zodiac_id) => {
+export const registerUser = (username, password, zodiac_id, email) => {
 return {
     type: REGISTER_USER,
     payload: axios.post('/auth/register', {
