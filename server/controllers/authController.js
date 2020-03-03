@@ -7,7 +7,7 @@ async function register(req, res) {
     const result = await db.getUser(username);
     if (result.length !== 0) return res.status(409).json('Username taken');
   
-    const hash = await bcrypt.hash(password, 12)
+    const hash = await bcrypt.hashSync(password, 12)
     console.log(hash)
     const registeredUser = await db.registerUser([username, hash, zodiac_id]);
     const user = registeredUser[0];
@@ -18,26 +18,25 @@ async function register(req, res) {
 async function login(req, res) {
     const { username, password } = req.body;
     const db = req.app.get('db');
+
     
     const foundUser = await db.getUser(username);
     if (foundUser.length === 0) return res.status(409).json('User not found. Please register as a new user before logging in.');
     const user = foundUser[0];
-    console.log(user)
-    const isAuthenticated = await bcrypt.compare(password, user.hash);
-    console.log(isAuthenticated)
-    console.log('password: ' + password)
-    console.log('typed password: ' + user.password)
+
+    const isAuthenticated = await bcrypt.compareSync(password, user.password);
     if (isAuthenticated === true) {
-      req.session.user = { user_id: user.user_id, username: user.username, zodiac_id: user.zodiac_id };
+        req.session.user = { user_id: user.user_id, username: user.username, zodiac_id: user.zodiac_id };
         res.status(200).json(req.session.user);
     }
-        res.status(403).json('Incorrect username or password. Please try again!');
 }
-
+// console.log(isAuthenticated)
+// console.log('password: ' + password)
+// console.log('typed password: ' + user.password)
 
 const logout = (req, res) => {
     req.session.destroy();
-    console.log(req.session)
+    // console.log(req.session)
     res.sendStatus(200).json(req.session)
 }
 

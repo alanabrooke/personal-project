@@ -23,7 +23,7 @@ export const updateState = e => {
     }
 }
 
-export const registerUser = (username,password, zodiac_id) => {
+export const registerUser = (username, password, zodiac_id) => {
 return {
     type: REGISTER_USER,
     payload: axios.post('/auth/register', {
@@ -63,9 +63,9 @@ export const getUser = () => {
 
 export default function authReducer(state = initialState, action) {
     const {type, payload} = action;
-    switch(type) {
+    switch(action.type) {
         case UPDATE_STATE: 
-        console.log(payload)
+        
         return {
             ...state,
             ...payload

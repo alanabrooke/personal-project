@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux'
 import {updateState, resetFields, registerUser, loginUser} from '../../redux/authReducer'
 import '../Authentication/Authentication.css';
@@ -23,13 +23,14 @@ class Authentication extends Component {
             this.props.history.push('/selection')
         }).catch(error => {
             console.log(error)
+            alert('Incorrect username or password. Please try again.')
         })
  
     }
     
     handleClickRegister = () => {
             this.props.registerUser(this.props.username, this.props.password, this.props.zodiac_id).then(() => {
-                // this.props.loginUser(this.props.username, this.props.password, this.props.zodiac_id)
+                this.props.loginUser(this.props.username, this.props.password, this.props.zodiac_id)
             }).catch(error => {
                 console.log(error)
             })
@@ -51,6 +52,7 @@ class Authentication extends Component {
                         </div>
                         <div  id='authButton' >
                         <button onClick={this.handleClickLogin}>Submit</button>
+                     
                         </div>
                             <h3>Don't have an account yet? Register here!</h3>
                             <div id='loginRegister'>
@@ -81,7 +83,7 @@ class Authentication extends Component {
                         </section>
                         </div>
                         <div  id='authButton' >
-                        <Link to='/selection'><button onClick={this.handleClickRegister}>Register</button></Link>
+                        <button onClick={this.handleClickRegister}>Register</button>
                         </div>
                         </div>
         )
@@ -96,9 +98,9 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, {
+export default withRouter(connect(mapStateToProps, {
     updateState,
     registerUser,
     resetFields,
     loginUser
-})(Authentication);
+})(Authentication));
