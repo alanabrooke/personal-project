@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link , withRouter } from 'react-router-dom';
 import './Selection.css';
 import { getSuggestions } from '../../redux/suggestionsReducer';
 import {connect} from 'react-redux';
@@ -10,18 +10,14 @@ class Selection extends Component {
       componentDidMount() {
         this.props.getSuggestions()
       }
+
+
     render() {
-        // //////////
-        // const mappedSuggestions = this.props.suggestions.map((val, index) => {
-        // return(
-        //     <h1>
-        //         testinggggg
-        //     </h1>
-        // )})
         return (
                 <div>
             <nav>
                 <Link to='/' id='logoutLink'><button id='logout'>Logout</button></Link>
+              <Link to='/account'><button>Account</button></Link>
             </nav>
                 <h1>
                     Choose your sign!
@@ -57,6 +53,6 @@ return {
 }
 }
 
-export default connect(mapStateToProps, {
-getSuggestions,
-})(Selection);
+export default withRouter(connect(mapStateToProps, {
+getSuggestions
+})(Selection));

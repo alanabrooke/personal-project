@@ -1,5 +1,6 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
+import Account from './components/Account/Account'
 import Home from './components/Home';
 import Selection from './components/Selection/Selection';
 import { Provider } from 'react-redux';
@@ -36,6 +37,7 @@ export default (
         <Route component={Capricorn} path='/selection/Capricorn'/>
         <Route component={Aquarius} path='/selection/Aquarius'/>
         <Route component={Pisces} path='/selection/Pisces'/>
+        <Route component={Account} path='/account'/>
     </Switch>
 
     </Provider>

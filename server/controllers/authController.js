@@ -30,25 +30,20 @@ async function login(req, res) {
         res.status(200).json(req.session.user);
     }
 }
-// console.log(isAuthenticated)
-// console.log('password: ' + password)
-// console.log('typed password: ' + user.password)
-
 const logout = (req, res) => {
     req.session.destroy();
-    // console.log(req.session)
     res.sendStatus(200).json(req.session)
 }
 
-const getUser = (req,res) => {
-    return req.session.user ? res.status(200).json(req.session.user) : res.status(500).json('User does not exist. Please register and try again.');
-}
+// console.log(isAuthenticated)
+// console.log('password: ' + password)
+// console.log('typed password: ' + user.password)
+// console.log(req.session)
 
 
 module.exports = {
     register,
     login,
-    getUser,
     logout
 }
 

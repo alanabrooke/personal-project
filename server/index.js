@@ -43,26 +43,31 @@ app.use(
 app.post('/auth/register', authentication.register);
 app.post('/auth/login', authentication.login);
 app.get('/auth/logout', authentication.logout);
-// app.get('/auth/user');
 
 //suggestions
 app.get('/api/suggestions', getSuggestions);
 
+//account
+app.delete('/api/account/:id')
+app.put('api/account/:id')
 
-//traits
-// app.get('/api/traits', getTraits)
+
+
+
 
 //sendgrid test
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const msg = {
-  to: 'test@example.com',
-  from: 'test@example.com',
+    to: 'atennison25@gmail.com',
+    from: 'test@example.com',
   subject: 'Sending with Twilio SendGrid is Fun',
   text: 'and easy to do anywhere, even with Node.js',
   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
 };
-sgMail.send(msg);
+sgMail
+.send(msg)
+.then(() => {}, console.error);
 
 
 

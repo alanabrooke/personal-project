@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {BrowserRouter as Router, Switch, Route, withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import { connect } from 'react-redux'
 import {updateState, resetFields, registerUser, loginUser} from '../../redux/authReducer'
 import '../Authentication/Authentication.css';
@@ -8,10 +8,18 @@ class Authentication extends Component {
     constructor() {
         super();
         this.state = {
+            email: '',
             username: '',
-            password: ''
+            password: '',
+            zodiac_id: null
         }
     }
+
+    // sendEmail = () => {
+    //     const {email} = this.state;
+    //     fetch(`http://localhost:3000/#/`)
+    // }
+    
     
     handleChange = e => {
         this.props.updateState({ [e.target.name]: e.target.value})
