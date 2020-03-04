@@ -1,5 +1,6 @@
 const bcrypt = require('bcryptjs');
 
+/////register
 async function register(req, res) {
     const { username, password, zodiac_id, email } = req.body;
     const db = req.app.get('db');
@@ -19,10 +20,11 @@ async function register(req, res) {
     
   }
 
+  //////login
 async function login(req, res) {
     const { username, password } = req.body;
     const db = req.app.get('db');
-    
+
     if (foundUser = 0) return res.status(411).json('Fields can not be empty.')
     const isAuthenticated = await bcrypt.compareSync(password, user.password);
 
@@ -30,28 +32,29 @@ async function login(req, res) {
     if (foundUser.length === 0) return res.status(409).json('User not found. Please register as a new user before logging in.');
     const user = foundUser[0];
 
-
     if (isAuthenticated === true) {
         req.session.user = { user_id: user.user_id, username: user.username, zodiac_id: user.zodiac_id, email: user.email };
         res.status(200).json(req.session.user);
     }
 }
+
+///logout
 const logout = (req, res) => {
     req.session.destroy();
     res.sendStatus(200).json(req.session)
 }
-
-// console.log(isAuthenticated)
-// console.log('password: ' + password)
-// console.log('typed password: ' + user.password)
-// console.log(req.session)
-
 
 module.exports = {
     register,
     login,
     logout
 }
+// console.log(isAuthenticated)
+// console.log('password: ' + password)
+// console.log('typed password: ' + user.password)
+// console.log(req.session)
+
+
 
 // const register = (req, res) => {
 //     const db = req.app.get('db');

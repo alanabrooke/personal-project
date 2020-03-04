@@ -12,7 +12,6 @@ const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET} = process.env;
 //controllers
 const authentication = require('./controllers/authController')
 const {getSuggestions} = require('./controllers/suggestionsController')
-// const { register, login, logout } = require('./controllers/authController');
 
 
 massive(CONNECTION_STRING)
@@ -48,8 +47,8 @@ app.get('/auth/logout', authentication.logout);
 app.get('/api/suggestions', getSuggestions);
 
 //account
-app.delete('/api/account/:id')
-app.put('api/account/:id')
+// app.delete('/api/account/:id')
+// app.put('api/account/:id')
 
 
 

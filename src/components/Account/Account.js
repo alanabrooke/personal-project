@@ -2,12 +2,21 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Link, withRouter} from 'react-router-dom';
 import {logout, deleteUser, editUser} from '../../redux/accountReducer'
-import './Account.css'
 import {getUser} from '../../redux/accountReducer';
+import './Account.css'
 
 
 
 class Account extends Component {
+        // constructor() {
+    //     super();
+    //     this.state = {
+    //         email,
+    //         username,
+    //         zodiac_id: null
+    //     }
+    // }
+
 
     componentDidMount() {
         this.props.getUser()
