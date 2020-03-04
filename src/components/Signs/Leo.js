@@ -22,7 +22,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
               <div>
             <h1>Leo</h1>
             {mappedSuggs[4]}
-            Leos are the poster child for optimism and upbeat personalities. Because of this, they can enjoy competitive games, even if they aren't the best, because they thrive on socialization rather than being a top player. Games that would suit Leos are first-person shooters, like the Call of Duty franchise, Battlefield, or Destiny.
+            Leos are the poster child for optimism and upbeat personalities. Because of this, they can enjoy competitive games, even if they aren't the best, because they thrive on socialization rather than being a top player. Games that would suit Leos are first-person shooters, like the Call of Duty franchise, Battlefield, The Division, and/or Bulletstorm.
                 <div id='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>
