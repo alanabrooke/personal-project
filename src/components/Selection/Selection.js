@@ -17,7 +17,7 @@ class Selection extends Component {
                 <div>
             <nav>
                 <Link to='/' id='logoutLink'><button id='logout'>Logout</button></Link>
-              <Link to='/account'><button>Account</button></Link>
+              <Link to='/account' id='account-link'><button id='account'>Account</button></Link>
             </nav>
                 <h1>
                     Choose your sign!

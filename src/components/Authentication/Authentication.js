@@ -104,6 +104,7 @@ class Authentication extends Component {
 
 const mapStateToProps = state => {
     return {
+        email: state.authReducer.email,
         username: state.authReducer.username,
         password: state.authReducer.password,
         zodiac_id: state.authReducer.zodiac_id
@@ -112,7 +113,7 @@ const mapStateToProps = state => {
 
 export default withRouter(connect(mapStateToProps, {
     updateState,
-    registerUser,
     resetFields,
+    registerUser,
     loginUser
 })(Authentication));

@@ -19,12 +19,13 @@ nav {
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: center;
 }
-#logout, #logoutLink {
+#logout, #logoutLink, #account, #account-link {
     background-color: transparent;
     border: none;
     display: flex;
-    align-self: center;
+    justify-content: center;
     margin-right: 50px;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

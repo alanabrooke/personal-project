@@ -4,14 +4,17 @@ async function register(req, res) {
     const { username, password, zodiac_id, email } = req.body;
     const db = req.app.get('db');
   
+    if (foundUser = 0) return res.status(411).json('Fields can not be empty.')
+    
+
     const result = await db.getUser(username);
     if (result.length !== 0) return res.status(409).json('Username taken');
   
-    const hash = await bcrypt.hashSync(password, 12)
+    const hash = await bcrypt.hashSync(password, 10)
     console.log(hash)
     const registeredUser = await db.registerUser([username, hash, zodiac_id, email]);
     const user = registeredUser[0];
-    req.session.user = { user_id: user.user_id, username: user.username, password: user.password, zodiac_id: zodiac_id, email: user.email }
+    req.session.user = { user_id: user.user_id, username: user.username, zodiac_id: zodiac_id, email: user.email }
     return res.status(201).json(req.session.user);
     
   }
@@ -20,11 +23,14 @@ async function login(req, res) {
     const { username, password } = req.body;
     const db = req.app.get('db');
     
+    if (foundUser = 0) return res.status(411).json('Fields can not be empty.')
+    const isAuthenticated = await bcrypt.compareSync(password, user.password);
+
     const foundUser = await db.getUser(username);
     if (foundUser.length === 0) return res.status(409).json('User not found. Please register as a new user before logging in.');
     const user = foundUser[0];
 
-    const isAuthenticated = await bcrypt.compareSync(password, user.password);
+
     if (isAuthenticated === true) {
         req.session.user = { user_id: user.user_id, username: user.username, zodiac_id: user.zodiac_id, email: user.email };
         res.status(200).json(req.session.user);

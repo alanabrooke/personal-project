@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,CAAC;EACH,KAAK,EAAE,MAAM;CACf",
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACH,KAAK,EAAE,aAAa;CACtB",
     "sources": [
-        "User.scss"
+        "Account.scss"
     ],
     "names": [],
-    "file": "User.css"
+    "file": "Account.css"
 }
