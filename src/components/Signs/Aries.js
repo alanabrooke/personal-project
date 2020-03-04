@@ -22,6 +22,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
               <div>
             <h1>Aries</h1>
             {mappedSuggs[0]}
+            Aries are known for being very free-spirited, but also having a bit of a temper. Fighting games like Mortal Kombat, Tekken, and Street Fighter would help release stress build-up. 
                 <div id='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>

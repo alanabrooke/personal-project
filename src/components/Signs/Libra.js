@@ -22,6 +22,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
               <div>
             <h1>Libra</h1>
             {mappedSuggs[6]}
+            Libras are known for being the most dependable sign. That being said, they also love to socialize (over video games) and play games that they can be recognized in for their efforts and ability to carry a team. Games that suit you, Libra, are Destiny, Borderlands, and Halo!
                 <div id='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>

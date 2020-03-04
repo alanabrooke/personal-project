@@ -22,6 +22,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
               <div>
             <h1>Capricorn</h1>
             {mappedSuggs[9]}
+            Capricorns have a personality that is greatly defined by being realistic in terms of logic, but enjoying creative visuals. Because of this, Virtual Reality games would be great for you! Video games like this include Beat Saber, VR Chat, Virtual Rabbids, and Tetris Effect.
                 <div id='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>

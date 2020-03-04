@@ -22,6 +22,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
               <div>
             <h1>Scorpio</h1>
             {mappedSuggs[7]}
+            Although they may not show it, Scorpios are competitive deep within. Besides that, they are often similar to Cancer when it comes to intuition, and similar to Virgo with a strategic mindset. Games that would be best for you are mobile games, such as Supreme Commander, Total War, Command & Conquer, or even Candy Crush! 
                 <div id='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>

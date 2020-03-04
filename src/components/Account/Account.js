@@ -25,13 +25,15 @@ class Account extends Component {
 
         return(
             <div>
-                <h1 name='test'>Edit Account</h1>
+                <h1 name='test'>Account</h1>
                 <p>E-mail</p>
                 <input/>
                 <p>Username</p>
                 <input/>
                 <p>Password</p>
                 <input/>
+                <button>Edit Account</button>
+                <button>Delete Account</button>
                 <Link to='/selection'><button>back to selection</button></Link>
             </div>
         )
