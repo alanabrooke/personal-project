@@ -25,9 +25,13 @@ class Account extends Component {
 
         return(
             <div>
-                <h1 name='test'>testing!!</h1>
-                <p>{this.props.username}</p>
-
+                <h1 name='test'>Edit Account</h1>
+                <p>E-mail</p>
+                <input/>
+                <p>Username</p>
+                <input/>
+                <p>Password</p>
+                <input/>
                 <Link to='/selection'><button>back to selection</button></Link>
             </div>
         )
