@@ -1,39 +1,39 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Link, withRouter} from 'react-router-dom';
-// import {logout, deleteUser, editUser} from '../../redux/accountReducer'
+import {logout, deleteUser, editUser} from '../../redux/accountReducer'
 import './Account.css'
 import {getUser} from '../../redux/accountReducer';
 
 
 
 class Account extends Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         email,
-    //         username,
-    //         zodiac_id: null
-    //     }
-    // }
 
     componentDidMount() {
         this.props.getUser()
     }
+
+    handleDelete = () => {
+    this.props.deleteUser()
+    }
+
+
 
     render() {
 
         return(
             <div>
                 <h1 name='test'>Account</h1>
-                <p>E-mail</p>
-                <input/>
+                <h2>Edit Account Info</h2>
+                <p>Email</p>
+                <input placeholder='email'></input>
                 <p>Username</p>
-                <input/>
+                <input placeholder='username'></input>
                 <p>Password</p>
-                <input/>
-                <button>Edit Account</button>
-                <button>Delete Account</button>
+                <input placeholder='password'></input>
+                <button >Edit Account</button>
+                <button onClick={this.handleDelete}>Delete Account</button>
+
                 <Link to='/selection'><button>back to selection</button></Link>
             </div>
         )
@@ -46,5 +46,8 @@ const mapStateToProps = state => {
     }
     
     export default withRouter(connect(mapStateToProps, {
-    getUser
+    getUser,
+    editUser,
+    logout,
+    deleteUser
     })(Account));
