@@ -20,7 +20,7 @@ const DELETE_USER = 'DELETE_USER';
 export const getUser = () => {
     return {
         type: GET_USER,
-        payload: axios.get('/auth/user/${user_id}')
+        payload: axios.get('/account/user')
     }
 }
 

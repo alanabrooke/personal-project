@@ -1,12 +1,5 @@
-const getUser = (req,res) => {
-const { username, zodiac_id, email } = req.body;
-  const { id } = req.params;
-  const db = req.app.get('db');
-
-  const userCheck = await db.getUser(username);
-  return req.session.user ? 
-  res.status(200).json(req.session.user) 
-  : res.status(500).json('User does not exist. Please register and try again.');
+function getUser(req, res) {
+  return req.session.user ? res.status(200).json(req.session.user) : res.status(500).json('User does not exist.');
 }
 
 const logout = (req, res) => {

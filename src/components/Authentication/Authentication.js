@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {withRouter} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 import { connect } from 'react-redux'
 import {updateState, resetFields, registerUser, loginUser} from '../../redux/authReducer'
 import '../Authentication/Authentication.css';
@@ -30,7 +30,6 @@ class Authentication extends Component {
         this.props.loginUser(this.props.username, this.props.password).then(() => {
             this.props.history.push('/selection')
         }).catch(error => {
-            console.log(error)
             alert('Incorrect username or password. Please try again.')
         })
     }
@@ -40,10 +39,10 @@ class Authentication extends Component {
             this.props.loginUser(this.props.username, this.props.password)
         }).catch(error => {
             console.log(error)
+            // console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id, this.props.email)
+            alert('You have been registered! Please log in to proceed.')
+            window.location.reload();
         })
-        console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id, this.props.email)
-        alert('You have been registered! Please log in to proceed.')
-        window.location.reload();
     }
     
 
@@ -61,7 +60,7 @@ class Authentication extends Component {
                         </section>
                         </div>
                         <div  id='authButton' >
-                        <button onClick={this.handleClickLogin}>Submit</button>
+                        <Link path to='/selection'><button>Submit</button></Link>
                         </div>
                             <h3>Don't have an account yet? Register here!</h3>
                             <div id='loginRegister'>

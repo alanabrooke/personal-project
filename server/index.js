@@ -7,10 +7,11 @@ app.use(express.static('public'));
 console.log(process.env.SESSION_SECRET)
 
 
-const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET} = process.env;
+const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET, SENDGRID_API_KEY} = process.env;
 
 //controllers
 const authentication = require('./controllers/authController')
+const account = require('./controllers/accountController')
 const {getSuggestions} = require('./controllers/suggestionsController')
 
 
@@ -47,6 +48,7 @@ app.get('/auth/logout', authentication.logout);
 app.get('/api/suggestions', getSuggestions);
 
 //account
+// app.get('/account/user', account.getUser );
 // app.delete('/api/account/:id')
 // app.put('api/account/:id')
 
@@ -57,16 +59,24 @@ app.get('/api/suggestions', getSuggestions);
 //sendgrid test
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+app.post('/send-email',(req,res)=>{
+    const { recipient, sender, topic, text } = req.query;
 const msg = {
-    to: 'atennison25@gmail.com',
-    from: 'test@example.com',
-  subject: 'Sending with Twilio SendGrid is Fun',
-  text: 'and easy to do anywhere, even with Node.js',
-  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    to: recipient,
+    from: sender,
+    topic: subject,
+    text: "Thanks for signing up for Zodigames! We'll keep you updated with new features."
+
 };
-sgMail
-.send(msg)
-.then(() => {}, console.error);
+console.log(msg)
+    sgMail.send(msg)
+    .then(()=>res.send('E-mail has been sent!'))
+    .catch(err=>{
+        console.log(err, err.response.body.errors);
+        res.status(500).send('An error has occurred. Please try again.')
+    })
+})
 
 
 

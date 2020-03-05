@@ -27,7 +27,6 @@ class Account extends Component {
     }
 
 
-
     render() {
 
         return(
@@ -40,7 +39,7 @@ class Account extends Component {
                 <input placeholder='username'></input>
                 <p>Password</p>
                 <input placeholder='password'></input>
-                <button >Edit Account</button>
+                <button>Edit Account</button>
                 <button onClick={this.handleDelete}>Delete Account</button>
 
                 <Link to='/selection'><button>back to selection</button></Link>
