@@ -45,10 +45,10 @@ app.post('/auth/register', authentication.register);
 app.post('/auth/login', authentication.login);
 app.post('/account/logout', account.logout);
 
-// //suggestions
+//suggestions
 app.get('/api/suggestions', getSuggestions);
 
-// //account
+//account
 app.get('/account/user', account.getUser )
 app.put('/account/edit/${user_id}', account.editUser)
 app.delete('/account/delete/${user_id}', account.deleteUser)

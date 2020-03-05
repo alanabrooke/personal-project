@@ -15,12 +15,7 @@ class Authentication extends Component {
         }
     }
 
-    // sendEmail = () => {
-    //     const {email} = this.state;
-    //     fetch(`http://localhost:3000/#/`)
-    // }
-    
-    
+
     handleChange = e => {
         this.props.updateState({ [e.target.name]: e.target.value})
         // console.log(e.target.value)
@@ -39,7 +34,7 @@ class Authentication extends Component {
             this.props.loginUser(this.props.username, this.props.password)
         }).catch(error => {
             console.log(error)
-            // console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id, this.props.email)
+            console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id, this.props.email)
             alert('You have been registered! Please log in to proceed.')
             window.location.reload();
         })
@@ -60,7 +55,7 @@ class Authentication extends Component {
                         </section>
                         </div>
                         <div  id='authButton' >
-                        <button onClick={this.handleClickLogin}>Submit</button>
+                        <Link to='/selection'><button>Submit</button></Link>
                         </div>
                             <h3>Don't have an account yet? Register here!</h3>
                             <div id='loginRegister'>

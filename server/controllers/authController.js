@@ -1,5 +1,22 @@
 const bcrypt = require('bcryptjs');
 
+//////login
+async function login(req, res) {
+  const { username, password } = req.body;
+  const db = req.app.get('db');
+
+  if (foundUser = 0) return res.status(411).json('Fields can not be empty.')
+  const isAuthenticated = await bcrypt.compareSync(password, user.password);
+
+  const foundUser = await db.getUser(username);
+  if (foundUser.length === 0) return res.status(409).json('User not found. Please register as a new user before logging in.');
+  const user = foundUser[0];
+
+  if (isAuthenticated === true) {
+      req.session.user = { user_id: user.user_id, username: user.username, zodiac_id: user.zodiac_id, email: user.email };
+      res.status(200).json(req.session.user);
+  }
+}
 /////register
 async function register(req, res) {
     const { username, password, zodiac_id, email } = req.body;
@@ -20,23 +37,6 @@ async function register(req, res) {
     
   }
 
-  //////login
-async function login(req, res) {
-    const { username, password } = req.body;
-    const db = req.app.get('db');
-
-    if (foundUser = 0) return res.status(411).json('Fields can not be empty.')
-    const isAuthenticated = await bcrypt.compareSync(password, user.password);
-
-    const foundUser = await db.getUser(username);
-    if (foundUser.length === 0) return res.status(409).json('User not found. Please register as a new user before logging in.');
-    const user = foundUser[0];
-
-    if (isAuthenticated === true) {
-        req.session.user = { user_id: user.user_id, username: user.username, zodiac_id: user.zodiac_id, email: user.email };
-        res.status(200).json(req.session.user);
-    }
-}
 
 module.exports = {
     register,
