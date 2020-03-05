@@ -6,15 +6,15 @@ const session = require('express-session')
 app.use(express.static('public'));
 // console.log(process.env.SESSION_SECRET)
 
-const cloudinary = require('cloudinary');
+
 
 const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET, SENDGRID_API_KEY} = process.env;
 
 //controllers
 const authentication = require('./controllers/authController')
-// const account = require('./controllers/accountController')
+const account = require('./controllers/accountController')
 const {getSuggestions} = require('./controllers/suggestionsController')
-
+const {getUser, editUser, logout, deleteUser} = require('./controllers/accountController')
 
 massive(CONNECTION_STRING)
 .then(db => {
@@ -41,17 +41,18 @@ app.use(
 
     
 //auth
-app.post('/auth/register', authentication.register);
-app.post('/auth/login', authentication.login);
-app.get('/auth/logout', authentication.logout);
+app.post('/auth/register', authentication.register)
+.post('/auth/login', authentication.login)
+.get('/auth/logout', authentication.logout)
 
 //suggestions
 app.get('/api/suggestions', getSuggestions);
 
 //account
-// app.get('/account/user', account.getUser );
-// app.delete('/api/account/:id')
-// app.put('api/account/:id')
+app.get('/account/user', account.getUser )
+.put('/account/edit/${user_id}', account.editUser)
+.delete('/account/delete/${user_id}', account.deleteUser)
+
 
 
 

@@ -60,7 +60,7 @@ class Authentication extends Component {
                         </section>
                         </div>
                         <div  id='authButton' >
-                        <Link path to='/selection'><button>Submit</button></Link>
+                        <button onClick={this.handleClickLogin}>Submit</button>
                         </div>
                             <h3>Don't have an account yet? Register here!</h3>
                             <div id='loginRegister'>

@@ -38,16 +38,9 @@ async function login(req, res) {
     }
 }
 
-///logout
-const logout = (req, res) => {
-    req.session.destroy();
-    res.sendStatus(200).json(req.session)
-}
-
 module.exports = {
     register,
-    login,
-    logout
+    login
 }
 // console.log(isAuthenticated)
 // console.log('password: ' + password)

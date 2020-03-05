@@ -4,44 +4,27 @@ import {Link, withRouter} from 'react-router-dom';
 import {logout, deleteUser, editUser} from '../../redux/accountReducer'
 import {getUser} from '../../redux/accountReducer';
 import './Account.css'
-import axios from 'axios';
+require('dotenv').config()
+
 
 //cloudinary
-const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/personal-proj/upload';
-const CLOUDINARY_UPLOAD_PRESET = 'mmrnyq2q';
-
-const imgPreview = document.getElementById('img-preview');
-const fileUpload = document.getElementById('file-upload');
-
-fileUpload.addEventListener('change', function(e) {
-const file = e.target.files[0];
-const formData = new FormData();
-formData.append('file', file);
-formData.append('upload_preset', CLOUDINARY_UPLOAD_PRESET)
-
-  axios({
-    url: CLOUDINARY_URL,
-    method: 'POST',
-    headers: {
-        'Content-Type' : 'application/x-www-form-urlencoded'
-    },
-    data: formData
-  }).then(function(res) {
-    console.log(res);
-  }).catch(function(err) {
-    console.log(err);
-  });
-
-});
 
 
 class Account extends Component {
+    checkUploadResult = (error, result) => {
+        let { event, info } = result;
+        if(event === 'success'){
+             this.setState({ profile_image: info.url });
+        }
+   }
+   
         // constructor() {
     //     super();
     //     this.state = {
-    //         email,
-    //         username,
-    //         zodiac_id: null
+    //         email: '',
+    //         username: '',
+    //         zodiac_id: null,
+    //         profile_img: ''
     //     }
     // }
 
@@ -56,9 +39,23 @@ class Account extends Component {
 
 
     render() {
-
-        return(
-            <div>
+        const { REACT_APP_cloudName, REACT_APP_cloudinary_unsigned } = process.env;
+        let widget;
+if( window.cloudinary ) {
+     widget = window.cloudinary.createUploadWidget(
+          {
+               cloudName: `${REACT_APP_cloudName}`,
+               uploadPreset: `${REACT_APP_cloudinary_unsigned}`,
+               sources: ['local', 'url'],
+               Default: false
+          },
+          ( error, result ) => {
+               this.checkUploadResult(error, result);
+          }
+     );
+}
+return(
+    <div>
                 <h1 name='test'>Account</h1>
                 <h2>Edit Account Info</h2>
                 <p>Email</p>
@@ -68,7 +65,8 @@ class Account extends Component {
                 <p>Password</p>
                 <input placeholder='password'></input>
                 <p>Upload Profile Image</p>
-                <input type='file' id='fileupload'></input>
+    <button name='profile_image' onClick={ () => widget.open() }>Upload Profile Image</button>
+
                 <button>Edit Account</button>
                 <button onClick={this.handleDelete}>Delete Account</button>
 

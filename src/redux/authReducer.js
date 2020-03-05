@@ -13,13 +13,18 @@ const initialState = {
 const UPDATE_STATE = 'UPDATE_STATE';
 const REGISTER_USER = 'REGISTER_USER';
 const LOGIN_USER = 'LOGIN_USER';
-const LOGOUT_USER = 'LOGOUT_USER';
 const RESET_FIELDS = 'RESET_FIELDS';
+
 
 export const updateState = e => {
     return {
         type: UPDATE_STATE,
         payload: e
+    }
+}
+export const resetFields = () => {
+    return {
+        type: RESET_FIELDS
     }
 }
 
@@ -34,11 +39,6 @@ return {
     })
 }
 }
-export const resetFields = () => {
-    return {
-        type: RESET_FIELDS
-    }
-}
 
 export const loginUser = (username,password) => {
    return { type: LOGIN_USER,
@@ -48,14 +48,6 @@ export const loginUser = (username,password) => {
     })
 }
 }
-export const logout = ()  => {
-    return {
-        type: LOGOUT_USER,
-        payload: axios.post('/auth/logout/')
-    }
-}
-
-
 
 export default function authReducer(state = initialState, action) {
     const {payload} = action;
@@ -90,17 +82,7 @@ export default function authReducer(state = initialState, action) {
                 loading: false,
                 user: payload.data
             }
-        case `${LOGOUT_USER}_PENDING`:
-            return {
-                ...state,
-                loading: true
-    }
-        case `${LOGOUT_USER}_FULFILLED`:
-            return {
-                ...state,
-                loading: false,
-                user: payload.data
-            }
+
         default: 
         return state;
     }

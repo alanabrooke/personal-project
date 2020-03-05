@@ -1,6 +1,12 @@
-function getUser(req, res) {
-  return req.session.user ? res.status(200).json(req.session.user) : res.status(500).json('User does not exist.');
+//get
+async function getUser(req, res) {
+  if (req.session.user) {
+      res.status(200).json(req.session.user)
+  } else {
+      res.sendStatus(404)
+  }
 }
+
 
 const logout = (req, res) => {
   req.session.destroy();

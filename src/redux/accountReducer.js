@@ -9,8 +9,8 @@ const initialState = {
     loading: false
 }
 
-const GET_USER = 'GET_USER';
 const UPDATE_STATE = 'UPDATE_STATE';
+const GET_USER = 'GET_USER';
 const EDIT_USER = 'EDIT_USER';
 const LOGOUT_USER = 'LOGOUT_USER';
 const DELETE_USER = 'DELETE_USER';
@@ -38,7 +38,7 @@ export function editUser({ user_id, username, email, zodiac_id }) {
 export const logout = ()  => {
     return {
         type: LOGOUT_USER,
-        payload: axios.post('/auth/logout/')
+        payload: axios.post('/auth/logout')
     }
 }
 
@@ -77,20 +77,20 @@ export default function accountReducer(state = initialState, action) {
                 zodiac_id: payload.data.zodiac_id,
                 loading: false
             }
-        case `${DELETE_USER}_PENDING`:
-                return {
+        case `${EDIT_USER}_PENDING`: 
+              return{
                   ...state,
                   loading: true
-                }
-        case `${DELETE_USER}_FULFILLED`:
-                return {
+              }
+          case `${EDIT_USER}_FULFILLED`:
+              return{
                   ...state,
-                  user_id: payload.data.user_id,
-                  email: payload.data.email,
                   username: payload.data.username,
-                  zodiac_id: payload.data.zodiac_id,
+                  email: payload.data.email,
+                  password: payload.data.password,
+                  profile_image: payload.data.profile_image,
                   loading: false
-                }
+              }
         case `${DELETE_USER}_PENDING`:
                 return {
                   ...state,
