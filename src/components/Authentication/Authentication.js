@@ -93,7 +93,6 @@ class Authentication extends Component {
                         </div>
                         </section>
                         </div>
-
                         <div  id='authButton' >
                         <button onClick={this.handleClickRegister}>Register</button>
                         </div>
