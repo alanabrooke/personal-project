@@ -23,13 +23,14 @@ export const updateState = e => {
     }
 }
 
-export const registerUser = (username, password, zodiac_id, email) => {
+export const registerUser = (email, username, password, zodiac_id) => {
 return {
     type: REGISTER_USER,
     payload: axios.post('/auth/register', {
+        email,
         username,
         password,
-        zodiac_id
+        zodiac_id,
     })
 }
 }

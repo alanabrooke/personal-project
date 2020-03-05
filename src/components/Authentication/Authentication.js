@@ -36,12 +36,12 @@ class Authentication extends Component {
     }
     
     handleClickRegister = () => {
-        this.props.registerUser(this.props.username, this.props.password, this.props.zodiac_id, this.props.email).then(() => {
+        this.props.registerUser(this.props.email, this.props.username, this.props.password, this.props.zodiac_id).then(() => {
             this.props.loginUser(this.props.username, this.props.password)
         }).catch(error => {
             console.log(error)
         })
-        console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id)
+        console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id, this.props.email)
         alert('You have been registered! Please log in to proceed.')
         window.location.reload();
     }

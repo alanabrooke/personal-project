@@ -11,12 +11,15 @@ class Selection extends Component {
         this.props.getSuggestions()
       }
 
+      handleLogout = () => {
+        this.props.history.push('/')
+    }
 
     render() {
         return (
                 <div>
             <nav>
-                <Link to='/' id='logoutLink'><button id='logout'>Logout</button></Link>
+                <button id='logout' onClick={this.handleLogout}>Logout</button>
               <Link to='/account' id='account-link'><button id='account'>Account</button></Link>
             </nav>
                 <h1>
