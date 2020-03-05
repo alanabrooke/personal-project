@@ -4,14 +4,15 @@ const massive = require('massive')
 const app = express()
 const session = require('express-session')
 app.use(express.static('public'));
-console.log(process.env.SESSION_SECRET)
+// console.log(process.env.SESSION_SECRET)
 
+const cloudinary = require('cloudinary');
 
 const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET, SENDGRID_API_KEY} = process.env;
 
 //controllers
 const authentication = require('./controllers/authController')
-const account = require('./controllers/accountController')
+// const account = require('./controllers/accountController')
 const {getSuggestions} = require('./controllers/suggestionsController')
 
 
@@ -65,7 +66,7 @@ app.post('/send-email',(req,res)=>{
 const msg = {
     to: recipient,
     from: sender,
-    topic: subject,
+    topic: topic,
     text: "Thanks for signing up for Zodigames! We'll keep you updated with new features."
 
 };

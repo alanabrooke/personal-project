@@ -3,6 +3,7 @@ import {Link , withRouter } from 'react-router-dom';
 import './Selection.css';
 import { getSuggestions } from '../../redux/suggestionsReducer';
 import {connect} from 'react-redux';
+// import galaxy from '../../../src/galaxy.jpg'
 
 
 class Selection extends Component {
@@ -17,6 +18,7 @@ class Selection extends Component {
 
     render() {
         return (
+      
                 <div>
             <nav>
                 <button id='logout' onClick={this.handleLogout}>Logout</button>
@@ -42,7 +44,7 @@ class Selection extends Component {
                 <Link to='/selection/pisces'><img src= 'https://image.flaticon.com/icons/svg/2647/2647411.svg'/></Link>
                 </div>
             </div>
-        
+      
           )  
         }
 }
