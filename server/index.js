@@ -41,17 +41,17 @@ app.use(
 
     
 //auth
-app.post('/auth/register', authentication.register)
-.post('/auth/login', authentication.login)
-.get('/auth/logout', authentication.logout)
+app.post('/auth/register', authentication.register);
+app.post('/auth/login', authentication.login);
+app.post('/account/logout', account.logout);
 
-//suggestions
+// //suggestions
 app.get('/api/suggestions', getSuggestions);
 
-//account
+// //account
 app.get('/account/user', account.getUser )
-.put('/account/edit/${user_id}', account.editUser)
-.delete('/account/delete/${user_id}', account.deleteUser)
+app.put('/account/edit/${user_id}', account.editUser)
+app.delete('/account/delete/${user_id}', account.deleteUser)
 
 
 

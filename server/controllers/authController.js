@@ -16,7 +16,7 @@ async function register(req, res) {
     const registeredUser = await db.registerUser([username, hash, zodiac_id, email]);
     const user = registeredUser[0];
     req.session.user = { user_id: user.user_id, username: user.username, zodiac_id: zodiac_id, email: user.email }
-    return res.status(201).json(req.session.user);
+    res.status(201).json(req.session.user);
     
   }
 

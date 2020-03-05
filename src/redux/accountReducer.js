@@ -38,7 +38,7 @@ export function editUser({ user_id, username, email, zodiac_id }) {
 export const logout = ()  => {
     return {
         type: LOGOUT_USER,
-        payload: axios.post('/auth/logout')
+        payload: axios.post('/account/logout')
     }
 }
 
