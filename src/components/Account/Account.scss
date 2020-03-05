@@ -1,3 +1,33 @@
 #test {
    color: palevioletred;
 }
+// #acctButtons {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    width: 200px;
+//    height: 100px;
+// } 
+#accountSet {
+   background-color: palevioletred;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   height: 75vh;
+}
+input {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 10px;
+   border-radius: 15px;
+}
+button, #backBtn, :any-link  { 
+   border-radius: 8px;
+   display: flex;
+   justify-content: center;
+   text-decoration: none;
+   border-width: 6px;
+   border-color: rgb(127, 7, 207);
+   padding: 8px;
+}

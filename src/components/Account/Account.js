@@ -55,23 +55,21 @@ if( window.cloudinary ) {
      );
 }
 return(
-    <div>
-                <h1 name='test'>Account</h1>
-                <h2>Edit Account Info</h2>
-                <p>Email</p>
-                <input placeholder='email'></input>
-                <p>Username</p>
-                <input placeholder='username'></input>
-                <p>Password</p>
-                <input placeholder='password'></input>
-                <p>Upload Profile Image</p>
-    <button name='profile_image' onClick={ () => widget.open() }>Upload Profile Image</button>
-
-                <button>Edit Account</button>
+            <div>
+                <h1 name='test'> Edit Account Info </h1>
+                <div id= 'accountSet'>
+                <input placeholder='E-mail'></input>
+                <input placeholder='Username'></input>
+                <input placeholder='New Password'></input>
+                <input placeholder='Confirm New Password'></input>
+    <button name='profile_image' onClick={ () => widget.open() }>Upload/Add Profile Image</button>
                 <button onClick={this.handleDelete}>Delete Account</button>
-
-                <Link to='/selection'><button>back to selection</button></Link>
+                </div>
+                <div id='backBtn'>
+                <Link to='/selection'><button>Back to Selection</button></Link>
             </div>
+            </div>
+            
         )
     }
 }

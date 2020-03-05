@@ -16,6 +16,10 @@ class Selection extends Component {
         this.props.history.push('/')
     }
 
+    // handleUser() {
+    //   this.props.history.push('/account')
+    // }
+
     render() {
         return (
       
