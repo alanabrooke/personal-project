@@ -6,6 +6,9 @@
 //    width: 200px;
 //    height: 100px;
 // } 
+// #test {
+//    font-size: 60px;
+// }
 #accountSet {
    display: flex;
    flex-direction: column;
@@ -18,14 +21,17 @@ input {
    display: flex;
    justify-content: space-evenly;
    padding: 10px;
-   border-radius: 10px;
+   border-radius: 2px;
    background-color:rgba(105, 104, 104, 0.404);
    border-color: black;
-   margin-bottom: -60px;
-   
+   // margin-bottom: -60px;
 }
-button, #backBtn, :any-link  { 
-   border-radius: 8px;
+#editInput {
+   margin-bottom: -90px;
+   margin-top: 10px;
+}
+#backBtn, :any-link  { 
+   border-radius: 1px;
    // color: rgba(105, 104, 104, 0.404);
    display: flex;
    justify-content: center;
@@ -34,6 +40,9 @@ button, #backBtn, :any-link  {
    border-color: black;
    padding: 8px;
    font-size: 12px;
+   &:hover {
+      background-color: black;
+
    // margin-bottom: -20px;
 }
 #profile_image, #backBtn, #deleteAcct {
@@ -46,14 +55,39 @@ button, #backBtn, :any-link  {
 }
 #profile_image {
    margin-bottom: -70px;
-   color: rgb(105,104,104)
+   margin-top: 30px;
+   background-color: rgba(105,104,104, 0.404);
+   // color: palevioletred;
+   font-size: 15px;
+   // border-color: whitesmoke;
+   color: rgb(105, 104, 104);
 }
+   &:hover {
+      background-color: black;
+   // border-width: 10px;
+}
+
+
 #deleteAcct {
    background-color: rgb(66, 2, 2);
    color: whitesmoke;
    font-size: 20px;
    font-weight: bold;
+   margin-top: -20px;
+   // border-color: whitesmoke;
+   // color: rgb(105, 104, 104);
 }
+   &:hover {
+      background-color: black;
+   // border-width: 10px;
+}
+
 #backBtn {
    font-size: 15px;
+   margin-top:40px;
+   font-family: 'Cormorant', serif;
+   color: rgb(105, 104, 104);
+}
+   &:hover {
+      background-color: black;
 }

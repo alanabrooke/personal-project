@@ -43,8 +43,8 @@ class Authentication extends Component {
 
     render() {
         return(
-            <div>
-                    <h1>Zodigames</h1>
+            <div id='authentication'>
+                    <h1 id="title">ZODIGAMES</h1>
                     <h3>Login</h3>
                     <div  id='loginRegister'>
                 <section>
@@ -87,7 +87,7 @@ class Authentication extends Component {
                         </div>
                         </section>
                         </div>
-                        <div  id='authButton' >
+                        <div  id='authButton2' >
                         <button onClick={this.handleClickRegister}>Register</button>
                         </div>
                         </div>

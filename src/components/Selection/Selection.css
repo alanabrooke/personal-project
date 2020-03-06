@@ -34,6 +34,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #moon {
@@ -53,6 +55,7 @@ nav {
 }
 
 #logout, #logoutLink, #account {
+  height: 40px;
   background: none;
   border-color: rgba(0, 0, 0, 0.568);
   border-radius: 2px;
@@ -67,9 +70,10 @@ nav {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   font-family: 'Cormorant', serif;
+  font-weight: 400;
   letter-spacing: 1.5px;
   color: #696868;
 }
@@ -112,6 +116,7 @@ h2, h1 {
   text-align: center;
   padding-top: 20px;
   font-family: 'Cormorant', serif;
+  margin-top: 7px;
   letter-spacing: 1.5px;
   font-size: 25px;
 }

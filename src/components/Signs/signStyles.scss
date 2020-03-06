@@ -1,7 +1,7 @@
 // #signDsc {
 //     background-color: rgba(105, 104, 104, 0.404);
 //     font-family: 'Cormorant', serif;
-//     font-size: 35px;
+//    letter-spacing: 1.5px;//     font-size: 35px;
 //     display: flex;
 //     // justify-content: center;
 //     line-height: 40px;
@@ -18,13 +18,15 @@
 #signDsc {
     background-color: rgba(105, 104, 104, 0.404);
     font-family: 'Cormorant', serif;
-    font-size: 35px;
+   letter-spacing: 1.5px;    
+   font-size: 35px;
     display:flex;
     text-align: center;
     padding: 30px;
     justify-content: center;
     width: 70%;
     border-radius: 7px;
+    
 
 }
 #details {
@@ -36,6 +38,10 @@
     align-content: center;
     // flex-direction: column;
 }
+// Link, button {
+//     font-family: 'Cormorant', serif;
+//    letter-spacing: 1.5px;
+// }
 // h1, h2, h4 {
 //     color: rgba(105, 104, 104);
 // }

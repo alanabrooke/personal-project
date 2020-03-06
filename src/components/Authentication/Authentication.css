@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif|Martel|Roboto|Spartan:200,300&display=swap");
 h3, h4, input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,8 +14,24 @@ h3, h4, input {
   margin-top: -2px;
 }
 
-h1 {
-  font-size: 50px;
+#authentication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#title {
+  font-size: 70px;
+  letter-spacing: 3px;
+  margin-bottom: 13px;
+  font-family: 'Cormorant', serif;
 }
 
 body {
@@ -30,6 +47,10 @@ body {
           justify-content: center;
 }
 
+#submit {
+  margin: -10px;
+}
+
 #authButton {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,9 +61,37 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 15px;
+  margin-top: -5px;
 }
 
-#signs, select {
+#authButton2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 15px;
+  margin: 5px;
+}
+
+button {
+  font-family: 'Cormorant', serif;
+  color: #696868;
+  border-radius: 2px;
+  letter-spacing: 1.5px;
+  font-size: 17px;
+  margin-top: -10px;
+  background-color: rgba(105, 104, 104, 0.404);
+}
+
+button:hover {
+  background-color: black;
+}
+
+select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,19 +99,18 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-color: transparent;
+  color: #696868;
+  background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
   margin-top: -11px;
+  margin-left: 16px;
+  font-size: 16px;
 }
 
 input {
   font-size: large;
   font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
-}
-
-button {
-  background-color: rgba(105, 104, 104, 0.404);
-  color: black;
 }
 /*# sourceMappingURL=Authentication.css.map */

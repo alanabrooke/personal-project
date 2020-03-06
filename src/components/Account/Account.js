@@ -56,12 +56,12 @@ if( window.cloudinary ) {
 }
 return(
             <div>
-                <h1 name='test'> Edit Account Info </h1>
+                <h1 id='test'> Edit Account Info </h1>
                 <div id= 'accountSet'>
-                <input placeholder='E-mail'></input>
-                <input placeholder='Username'></input>
-                <input placeholder='New Password'></input>
-                <input placeholder='Confirm New Password'></input>
+                <input id='editInput' placeholder='E-mail'></input>
+                <input id='editInput' placeholder='Username'></input>
+                <input id='editInput' placeholder='New Password'></input>
+                <input id='editInput' placeholder='Confirm New Password'></input>
 
                 {/* <div id='acctBtns'> */}
                 <button id='profile_image' onClick={ () => widget.open() }>Upload/Add Profile Image</button>

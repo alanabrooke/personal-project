@@ -29,16 +29,16 @@ class Selection extends Component {
                 <div>
             <nav>
                 <button id='logout' onClick={this.handleLogout}>Logout</button>
-              <Link to='/account' id='account-link'><button id='account'>Account</button></Link>
+              <button path to='/account' id='account'>Account</button>
             </nav>
-                <h1>
+                <h2>
                     Choose your sign.
                     Don't forget to check your sun, moon, and rising!
-                </h1>
+                </h2>
                 <h2>Don't know your sign(s)? Click the moon below! 
                 </h2>
                 <div id='moon' >
-                <a href='https://www.astrology.com.tr/birth-chart.asp' target="_blank"><img height='100px' width='50px' src='https://pngimg.com/uploads/moon/moon_PNG19.png'/></a>
+                <a href='https://astro.cafeastrology.com/natal.php' target="_blank"><img height='100px' width='50px' src='https://pngimg.com/uploads/moon/moon_PNG19.png'/></a>
                 </div>
                 <div id='allButtons'>
                 <Link to='/selection/Aries'><h2>Aries</h2><img src='https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Aries.png&r=255&g=255&b=255'/></Link>
