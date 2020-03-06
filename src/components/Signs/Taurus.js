@@ -22,8 +22,10 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
               <div>
             <h1>Taurus</h1>
             {mappedSuggs[1]}
+            <h4 id='signDsc'>
                 Us Taureans have a persistent attitude, which also means we can be rather stubborn. Survival games may suit you best due to the fact that consistency is key.
                 Some recommended games would be ARK: Survival, We Happy Few, or the Outlast series (if you like a little horror in your entertainment!).
+            </h4>
                 <div id='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>

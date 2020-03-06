@@ -65,7 +65,7 @@ return(
 
                 {/* <div id='acctBtns'> */}
                 <button id='profile_image' onClick={ () => widget.open() }>Upload/Add Profile Image</button>
-                <button id= 'deleteAcct' onClick={this.handleDelete}>Delete Account</button>
+                <button id= 'deleteAcct' onClick={this.handleDelete}>DELETE ACCOUNT</button>
                 </div>
                 <div>
                 <Link to='/selection'><button id='backBtn'>Back to Selection</button></Link>

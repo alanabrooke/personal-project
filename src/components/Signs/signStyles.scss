@@ -1,0 +1,41 @@
+// #signDsc {
+//     background-color: rgba(105, 104, 104, 0.404);
+//     font-family: 'Cormorant', serif;
+//     font-size: 35px;
+//     display: flex;
+//     // justify-content: center;
+//     line-height: 40px;
+//     text-align: center;
+//     padding: 15px;
+//     margin-left: 18%;
+//     align-items: center;
+//     // flex-direction: column;
+//     height: 45vh;
+//     width: 60%;
+//     color: rgb(105, 104, 104)
+// }
+
+#signDsc {
+    background-color: rgba(105, 104, 104, 0.404);
+    font-family: 'Cormorant', serif;
+    font-size: 35px;
+    display:flex;
+    text-align: center;
+    padding: 30px;
+    justify-content: center;
+    width: 70%;
+    border-radius: 7px;
+
+}
+#details {
+    background-color: none;
+    // text-align: center;
+    display: flex;
+    margin-top: 100px;
+    // justify-content: center;
+    align-content: center;
+    // flex-direction: column;
+}
+// h1, h2, h4 {
+//     color: rgba(105, 104, 104);
+// }

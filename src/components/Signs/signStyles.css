@@ -1,0 +1,26 @@
+#signDsc {
+  background-color: rgba(105, 104, 104, 0.404);
+  font-family: 'Cormorant', serif;
+  font-size: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  border-radius: 7px;
+}
+
+#details {
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+/*# sourceMappingURL=signStyles.css.map */

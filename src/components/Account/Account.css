@@ -12,6 +12,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 75vh;
+  margin-top: -40px;
 }
 
 input {
@@ -25,11 +26,11 @@ input {
   border-radius: 10px;
   background-color: rgba(105, 104, 104, 0.404);
   border-color: black;
+  margin-bottom: -60px;
 }
 
 button, #backBtn, :-webkit-any-link {
   border-radius: 8px;
-  color: rgba(105, 104, 104, 0.404);
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -38,22 +39,22 @@ button, #backBtn, :-webkit-any-link {
   border-width: 2px;
   border-color: black;
   padding: 8px;
+  font-size: 12px;
 }
 
 button, #backBtn, :-moz-any-link {
   border-radius: 8px;
-  color: rgba(105, 104, 104, 0.404);
   display: flex;
   justify-content: center;
   text-decoration: none;
   border-width: 2px;
   border-color: black;
   padding: 8px;
+  font-size: 12px;
 }
 
 button, #backBtn, :any-link {
   border-radius: 8px;
-  color: rgba(105, 104, 104, 0.404);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,12 +65,31 @@ button, #backBtn, :any-link {
   border-width: 2px;
   border-color: black;
   padding: 8px;
+  font-size: 12px;
 }
 
 #profile_image, #backBtn, #deleteAcct {
   background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
-  color: rgba(105, 104, 104, 0.404);
+  color: black;
+  margin-bottom: -20px;
+  margin-top: -10px;
+}
+
+#profile_image {
+  margin-bottom: -70px;
+  color: #696868;
+}
+
+#deleteAcct {
+  background-color: #420202;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#backBtn {
+  font-size: 15px;
 }
 /*# sourceMappingURL=Account.css.map */

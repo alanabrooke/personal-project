@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant:300i&display=swap');
 
-h1,h3, h4, input {
+h3, h4, input {
     // color: purple;
     display: flex;
     justify-content: center;
     padding-top: 10px;
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Cormorant', serif;
     letter-spacing: 1.5px;
+    // font-size: 40px; 
+    color: rgb(105, 104, 104);
+    margin-top: -2px;
+}
+h1{
+    font-size: 50px;
+//     margin-bottom: -10px;
 }
 
 body {
@@ -28,15 +35,16 @@ body {
 //     display: flex;
 //     justify-content: center;
     
-
 // }
 #signs, select{
     display: flex;
     justify-content: center;
     border-color: transparent;
-    background-color: rgb(108, 108, 243);
+    // background-color: rgb(108, 108, 243);
     font-family: 'Cormorant', serif;
     letter-spacing: 1.5px;
+    margin-top: -11px;
+
 }
 input {
     // background-color: rgb(34, 31, 36);
@@ -44,4 +52,8 @@ input {
     font-size: large;
     font-family: 'Cormorant', serif;
     letter-spacing: 1.5px;
+}
+button {
+    background-color:rgba(105, 104, 104, 0.404);
+    color: black;
 }

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300i&display=swap");
-h1, h3, h4, input {
+h3, h4, input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,8 +7,14 @@ h1, h3, h4, input {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 10px;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
+  color: #696868;
+  margin-top: -2px;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 body {
@@ -44,14 +50,19 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-color: transparent;
-  background-color: #6c6cf3;
   font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
+  margin-top: -11px;
 }
 
 input {
   font-size: large;
   font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
+}
+
+button {
+  background-color: rgba(105, 104, 104, 0.404);
+  color: black;
 }
 /*# sourceMappingURL=Authentication.css.map */

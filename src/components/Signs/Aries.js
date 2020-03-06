@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import { getSuggestions} from '../../redux/suggestionsReducer';
+import '../Signs/signStyles.css'
 
  class Aries extends Component {
 
@@ -20,9 +21,11 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Aries</h1>
+              <h1>Aries</h1>
             {mappedSuggs[0]}
+            <h4 id='signDsc'>
             Aries are known for being very free-spirited, but also having a bit of a temper. Fighting games like Mortal Kombat, Tekken, and Street Fighter would help release stress build-up. 
+            </h4>
                 <div id='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>
