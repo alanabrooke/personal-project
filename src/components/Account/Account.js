@@ -62,14 +62,16 @@ return(
                 <input placeholder='Username'></input>
                 <input placeholder='New Password'></input>
                 <input placeholder='Confirm New Password'></input>
-    <button name='profile_image' onClick={ () => widget.open() }>Upload/Add Profile Image</button>
-                <button onClick={this.handleDelete}>Delete Account</button>
+
+                {/* <div id='acctBtns'> */}
+                <button id='profile_image' onClick={ () => widget.open() }>Upload/Add Profile Image</button>
+                <button id= 'deleteAcct' onClick={this.handleDelete}>Delete Account</button>
                 </div>
-                <div id='backBtn'>
-                
-                <Link to='/selection'><button>Back to Selection</button></Link>
+                <div>
+                <Link to='/selection'><button id='backBtn'>Back to Selection</button></Link>
             </div>
             </div>
+            // </div>
             
         )
     }

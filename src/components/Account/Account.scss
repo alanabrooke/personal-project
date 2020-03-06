@@ -1,6 +1,4 @@
-#test {
-   color: palevioletred;
-}
+
 // #acctButtons {
 //    display: flex;
 //    flex-direction: column;
@@ -9,7 +7,7 @@
 //    height: 100px;
 // } 
 #accountSet {
-   background-color: palevioletred;
+   
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -20,14 +18,25 @@ input {
    display: flex;
    justify-content: space-evenly;
    padding: 10px;
-   border-radius: 15px;
+   border-radius: 10px;
+   background-color:rgba(105, 104, 104, 0.404);
+   border-color: black;
+   
 }
 button, #backBtn, :any-link  { 
    border-radius: 8px;
+   color: rgba(105, 104, 104, 0.404);
    display: flex;
    justify-content: center;
    text-decoration: none;
-   border-width: 6px;
-   border-color: rgb(127, 7, 207);
+   border-width: 2px;
+   border-color: black;
    padding: 8px;
+}
+#profile_image, #backBtn, #deleteAcct {
+   background-color: rgba(105, 104, 104, 0.404);
+   font-family: 'Cormorant', serif;
+   letter-spacing: 1.5px;
+   color: rgba(105, 104, 104, 0.404);
+   
 }

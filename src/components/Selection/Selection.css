@@ -34,7 +34,6 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: black;
 }
 
 #moon {
@@ -54,7 +53,7 @@ nav {
 }
 
 #logout, #logoutLink, #account {
-  background-color: transparent;
+  background: none;
   border-color: rgba(0, 0, 0, 0.568);
   border-radius: 2px;
   border-width: 2px;
@@ -69,7 +68,8 @@ nav {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-decoration: none;
-  font-family: 'Cormorant', sans-serif;
+  font-family: 'Cormorant', serif;
+  letter-spacing: 1.5px;
   color: #696868;
 }
 
@@ -110,6 +110,7 @@ h2, h1 {
   color: #696868;
   text-align: center;
   padding-top: 20px;
-  font-family: 'Cormorant', sans-serif;
+  font-family: 'Cormorant', serif;
+  letter-spacing: 1.5px;
 }
 /*# sourceMappingURL=Selection.css.map */

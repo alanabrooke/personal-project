@@ -30,7 +30,7 @@ nav {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    border-bottom: black;
+   
 }
 #moon {
     display: flex;
@@ -44,7 +44,7 @@ nav {
     }
 }
 #logout, #logoutLink,  #account {
-    background-color: transparent;
+    background: none;
     border-color: rgba(0, 0, 0, 0.568);
     border-radius: 2px;
     border-width: 2px;
@@ -54,7 +54,8 @@ nav {
     justify-content: space-evenly;
     // margin-right: 50px;
     text-decoration: none;
-    font-family: 'Cormorant', sans-serif;
+    font-family: 'Cormorant', serif;
+    letter-spacing: 1.5px;
     color: $primaryBtn;
         &:hover {
             background-color: black;
@@ -84,6 +85,7 @@ h2, h1{
     color: $primaryBtn;
     text-align: center;
     padding-top: 20px;
-    font-family: 'Cormorant', sans-serif;
+    font-family: 'Cormorant', serif;
+    letter-spacing: 1.5px;
 }
 
