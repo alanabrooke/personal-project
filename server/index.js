@@ -8,6 +8,7 @@ app.use(express.static('public'));
 
 
 
+
 const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET, SENDGRID_API_KEY} = process.env;
 
 //controllers

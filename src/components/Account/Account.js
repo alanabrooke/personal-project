@@ -66,6 +66,7 @@ return(
                 <button onClick={this.handleDelete}>Delete Account</button>
                 </div>
                 <div id='backBtn'>
+                
                 <Link to='/selection'><button>Back to Selection</button></Link>
             </div>
             </div>

@@ -1,23 +1,25 @@
 img {
-  padding: 20px;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border-radius: 6px;
-  width: 100px;
+  border-radius: 2px;
+  width: 110px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 img:hover {
-  background-color: white;
+  background-color: rgba(138, 138, 138, 0.096);
+  border-radius: 100px;
+  border-color: whitesmoke;
 }
 
 nav {
-  background-color: palegreen;
-  height: 50px;
+  background-color: rgba(105, 104, 104, 0.404);
+  height: 70px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,9 +36,26 @@ nav {
           justify-content: center;
 }
 
-#logout, #logoutLink, #account-link, #account {
+#moon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#moon img {
+  background: none;
+  width: 50px;
+  height: 50px;
+}
+
+#logout, #logoutLink, #account {
   background-color: transparent;
-  border-color: #9985f0;
+  border-color: rgba(0, 0, 0, 0.568);
+  border-radius: 2px;
+  border-width: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +66,12 @@ nav {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Spartan', sans-serif;
+  color: #696868;
+}
+
+#logout:hover, #logoutLink:hover, #account:hover {
+  background-color: black;
 }
 
 #allButtons {
@@ -62,19 +86,9 @@ nav {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 100px;
 }
 
 #backButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,7 +104,9 @@ h2, h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #9737c4;
+  color: #696868;
   text-align: center;
+  padding-top: 20px;
+  font-family: 'Spartan', sans-serif;
 }
 /*# sourceMappingURL=Selection.css.map */

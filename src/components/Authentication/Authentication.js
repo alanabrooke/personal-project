@@ -48,10 +48,10 @@ class Authentication extends Component {
                     <h3>Login</h3>
                     <div  id='loginRegister'>
                 <section>
-                        <h4>Username</h4>
-                        <input type="text" name="username" onChange={this.handleChange}/>
-                        <h4>Password</h4>
-                        <input type="password" name='password' onChange={this.handleChange}/>
+                        {/* <h4>Username</h4> */}
+                        <input type="text" name="username" placeholder='Username' onChange={this.handleChange}/>
+                        {/* <h4>Password</h4> */}
+                        <input type="password" name='password' placeholder='Password' onChange={this.handleChange}/>
                         </section>
                         </div>
                         <div  id='authButton' >
@@ -60,16 +60,16 @@ class Authentication extends Component {
                             <h3>Don't have an account yet? Register here!</h3>
                             <div id='loginRegister'>
                         <section>
-                        <h4>Email</h4>
-                    <input type='text' name='email' onChange={this.handleChange}/>
-                            <h4>Username</h4>
-                            <input type="text" name="username" onChange={this.handleChange}/>
-                        <h4>Password</h4>
-                        <input type="password" name='password' onChange={this.handleChange}/>
+                        {/* <h4>Email</h4> */}
+                    <input type='text' name='email' placeholder='E-mail' onChange={this.handleChange}/>
+                            {/* <h4>Username</h4> */}
+                            <input type="text" name="username" placeholder='Username' onChange={this.handleChange}/>
+                        {/* <h4>Password</h4> */}
+                        <input type="password" name='password' placeholder='Password' onChange={this.handleChange}/>
                         <div></div>
                         <h4>Zodiac Sign</h4>
-                        <div  id='signs' >
-                        <select onChange={this.handleChange} name="zodiac_id">
+                        <div  id='signs'>
+                        <select onChange={this.handleChange}name="zodiac_id">
                             <option>Please select your sign</option>
                             <option value={1}>Aries</option>
                             <option value={2}>Taurus</option>
