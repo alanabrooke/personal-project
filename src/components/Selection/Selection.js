@@ -18,6 +18,7 @@ class Selection extends Component {
         this.props.history.push('/')
     }
 
+
     // handleUser() {
     //   this.props.history.push('/account')
     // }
@@ -35,23 +36,23 @@ class Selection extends Component {
                     Don't forget to check your sun, moon, and rising!
                 </h1>
                 <h2>Don't know your sign(s)? Click the moon below! 
-                <a href='https://www.astrology.com.tr/birth-chart.asp'></a>
                 </h2>
                 <div id='moon' >
-                <img height='100px' width='50px' src='https://pngimg.com/uploads/moon/moon_PNG19.png'/>
+                <a href='https://www.astrology.com.tr/birth-chart.asp' target="_blank"><img height='100px' width='50px' src='https://pngimg.com/uploads/moon/moon_PNG19.png'/></a>
                 </div>
                 <div id='allButtons'>
-                <Link to='/selection/aries'><img src='https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Aries.png&r=102&g=102&b=102'/></Link>
-                <Link to='/selection/taurus'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Taurus.png&r=105&g=104&b=104'/></Link>
-                <Link to='/selection/Gemini'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Gemini.png&r=105&g=104&b=104'/></Link>
-                <Link to='/selection/Cancer'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Cancer.png&r=105&g=104&b=104'/></Link>
-                <Link to='/selection/Leo'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Leo.png&r=105&g=104&b=104'/></Link>
-                <Link to='/selection/Virgo'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Virgo.png&r=105&g=104&b=104'/></Link>
-                <Link to='/selection/Libra'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Libra.png&r=105&g=104&b=104'/></Link>
-                <Link to='/selection/Scorpio'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Scorpio.png&r=105&g=104&b=104'/></Link>
-                <Link to='/selection/Sagittarius'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Sagittarius.png&r=105&g=104&b=104'/></Link>
-                <Link to='/selection/Capricorn'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Aquarius.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Pisces'><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Pisces.png&r=105&g=104&b=104'/></Link>
+                <Link to='/selection/Aries'><h2>Aries</h2><img src='https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Aries.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Taurus'><h2>Taurus</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Taurus.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Gemini'><h2>Gemini</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Gemini.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Cancer'><h2>Cancer</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Cancer.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Leo'><h2>Leo</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Leo.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Virgo'><h2>Virgo</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Virgo.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Libra'><h2>Libra</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Libra.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Scorpio'><h2>Scorpio</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Scorpio.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Sagittarius'><h2>Sagittarius</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Sagittarius.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Capricorn'><h2>Capricorn</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Capricorn.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Aquarius'><h2>Aquarius</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Aquarius.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Pisces'><h2>Pisces</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Pisces.png&r=255&g=255&b=255'/></Link>
 
                 {/* <Link to='/selection/gemini'><img src= 'https://image.flaticon.com/icons/svg/2647/2647386.svg'/></Link>
                 <Link to='/selection/cancer'><img src= 'https://image.flaticon.com/icons/svg/2647/2647357.svg'/></Link>

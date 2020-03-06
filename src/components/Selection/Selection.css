@@ -1,12 +1,13 @@
 img {
-  padding: 30px;
+  padding: 40px;
+  margin: -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 2px;
-  width: 110px;
+  width: 90px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -14,7 +15,6 @@ img {
 img:hover {
   background-color: rgba(138, 138, 138, 0.096);
   border-radius: 100px;
-  border-color: whitesmoke;
 }
 
 nav {
@@ -34,6 +34,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: black;
 }
 
 #moon {
@@ -47,8 +48,9 @@ nav {
 
 #moon img {
   background: none;
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
+  margin: -40px;
 }
 
 #logout, #logoutLink, #account {
@@ -56,6 +58,7 @@ nav {
   border-color: rgba(0, 0, 0, 0.568);
   border-radius: 2px;
   border-width: 2px;
+  width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +69,7 @@ nav {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-decoration: none;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Cormorant', sans-serif;
   color: #696868;
 }
 
@@ -107,6 +110,6 @@ h2, h1 {
   color: #696868;
   text-align: center;
   padding-top: 20px;
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Cormorant', sans-serif;
 }
 /*# sourceMappingURL=Selection.css.map */
