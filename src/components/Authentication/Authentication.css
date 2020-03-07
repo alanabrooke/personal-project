@@ -12,6 +12,7 @@ h3, h4, input {
   letter-spacing: 1.5px;
   color: #696868;
   margin-top: -2px;
+  font-size: larger;
 }
 
 #authentication {
@@ -45,6 +46,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: -20px;
 }
 
 #submit {
@@ -91,6 +93,10 @@ button:hover {
   background-color: black;
 }
 
+h3 {
+  font-size: 28px;
+}
+
 select {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,9 +109,9 @@ select {
   background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
-  margin-top: -11px;
-  margin-left: 16px;
-  font-size: 16px;
+  margin-top: -20px;
+  margin-left: 8px;
+  font-size: 18px;
 }
 
 input {

@@ -11,7 +11,10 @@ h3, h4, input {
     // font-size: 40px; 
     color: rgb(105, 104, 104);
     margin-top: -2px;
+    font-size: larger;
+    
 }
+
 #authentication {
     display: flex;
     justify-content: center;
@@ -30,10 +33,15 @@ body {
 #loginRegister {
     display: flex;
     justify-content: center;
+    margin-top: -20px;
 }
 #submit {
     margin: -10px;
+
 }
+// button {
+//     font-size: 35px;
+// }
 #authButton {
     display: flex;
     justify-content: center;
@@ -64,10 +72,9 @@ button {
         
     }
 }
-// h4 {
-//     display: flex;
-//     justify-content: center;
-// }
+h3 {
+    font-size: 28px;
+}
 select{
     display: flex;
     justify-content: center;
@@ -76,9 +83,9 @@ select{
     background-color: rgba(105, 104, 104, 0.404);;
     font-family: 'Cormorant', serif;
     letter-spacing: 1.5px;
-    margin-top: -11px;
-    margin-left: 16px;
-    font-size: 16px;
+    margin-top: -20px;
+    margin-left: 8px;
+    font-size: 18px;
 
 }
 input {

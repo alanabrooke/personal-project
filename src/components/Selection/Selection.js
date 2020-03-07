@@ -26,7 +26,7 @@ class Selection extends Component {
     render() {
         return (
       
-                <div>
+                <div path='true'>
             <nav>
                 <button id='logout' onClick={this.handleLogout}>Logout</button>
               <button path to='/account' id='account'>Account</button>

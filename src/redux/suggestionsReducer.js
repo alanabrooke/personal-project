@@ -7,7 +7,7 @@ const initialState = {
 
 const GET_SUGGESTIONS = 'GET_SUGGESTIONS';
 const UPDATE_STATE = 'UPDATE_STATE';
-// const RESET_FIELDS = 'RESET_FIELDS';
+
 
 export const updateState = e => {
     return {
@@ -27,15 +27,12 @@ export const getSuggestions = () => {
 export default function suggestionsReducer(state = initialState, action) {
     const {type, payload} = action
     switch(type) {
-        // case UPDATE_STATE: 
-        //     return {
-        //         ...state,
-        //         ...payload
-        //     }
-        // case RESET_FIELDS:
-        //     return {
-        //         ...state
-        //     }
+        case UPDATE_STATE: 
+            return {
+                ...state,
+                ...payload
+            }
+
         case `${GET_SUGGESTIONS}_PENDING`:
             return {
                 ...state,
