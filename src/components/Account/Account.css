@@ -33,7 +33,7 @@ input {
   margin-top: 10px;
 }
 
-button, #backBtn, :-webkit-any-link {
+#backBtn, :-webkit-any-link {
   border-radius: 1px;
   display: -webkit-box;
   display: flex;
@@ -46,7 +46,7 @@ button, #backBtn, :-webkit-any-link {
   font-size: 12px;
 }
 
-button, #backBtn, :-moz-any-link {
+#backBtn, :-moz-any-link {
   border-radius: 1px;
   display: flex;
   justify-content: center;
@@ -57,7 +57,7 @@ button, #backBtn, :-moz-any-link {
   font-size: 12px;
 }
 
-button, #backBtn, :any-link {
+#backBtn, :any-link {
   border-radius: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,19 +72,19 @@ button, #backBtn, :any-link {
   font-size: 12px;
 }
 
-button:hover, #backBtn:hover, :-webkit-any-link:hover {
+#backBtn:hover, :-webkit-any-link:hover {
   background-color: black;
 }
 
-button:hover, #backBtn:hover, :-moz-any-link:hover {
+#backBtn:hover, :-moz-any-link:hover {
   background-color: black;
 }
 
-button:hover, #backBtn:hover, :any-link:hover {
+#backBtn:hover, :any-link:hover {
   background-color: black;
 }
 
-button #profile_image, button #backBtn, button #deleteAcct, #backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct, :-webkit-any-link #profile_image, :-webkit-any-link #backBtn, :-webkit-any-link #deleteAcct {
+#backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct, :-webkit-any-link #profile_image, :-webkit-any-link #backBtn, :-webkit-any-link #deleteAcct {
   background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
@@ -93,7 +93,7 @@ button #profile_image, button #backBtn, button #deleteAcct, #backBtn #profile_im
   margin-top: -10px;
 }
 
-button #profile_image, button #backBtn, button #deleteAcct, #backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct, :-moz-any-link #profile_image, :-moz-any-link #backBtn, :-moz-any-link #deleteAcct {
+#backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct, :-moz-any-link #profile_image, :-moz-any-link #backBtn, :-moz-any-link #deleteAcct {
   background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
@@ -102,7 +102,7 @@ button #profile_image, button #backBtn, button #deleteAcct, #backBtn #profile_im
   margin-top: -10px;
 }
 
-button #profile_image, button #backBtn, button #deleteAcct, #backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct, :any-link #profile_image, :any-link #backBtn, :any-link #deleteAcct {
+#backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct, :any-link #profile_image, :any-link #backBtn, :any-link #deleteAcct {
   background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Cormorant', serif;
   letter-spacing: 1.5px;
@@ -111,7 +111,7 @@ button #profile_image, button #backBtn, button #deleteAcct, #backBtn #profile_im
   margin-top: -10px;
 }
 
-button #profile_image, #backBtn #profile_image, :-webkit-any-link #profile_image {
+#backBtn #profile_image, :-webkit-any-link #profile_image {
   margin-bottom: -70px;
   margin-top: 30px;
   background-color: rgba(105, 104, 104, 0.404);
@@ -119,7 +119,7 @@ button #profile_image, #backBtn #profile_image, :-webkit-any-link #profile_image
   color: #696868;
 }
 
-button #profile_image, #backBtn #profile_image, :-moz-any-link #profile_image {
+#backBtn #profile_image, :-moz-any-link #profile_image {
   margin-bottom: -70px;
   margin-top: 30px;
   background-color: rgba(105, 104, 104, 0.404);
@@ -127,7 +127,7 @@ button #profile_image, #backBtn #profile_image, :-moz-any-link #profile_image {
   color: #696868;
 }
 
-button #profile_image, #backBtn #profile_image, :any-link #profile_image {
+#backBtn #profile_image, :any-link #profile_image {
   margin-bottom: -70px;
   margin-top: 30px;
   background-color: rgba(105, 104, 104, 0.404);
@@ -135,19 +135,19 @@ button #profile_image, #backBtn #profile_image, :any-link #profile_image {
   color: #696868;
 }
 
-button:hover, #backBtn:hover, :-webkit-any-link:hover {
+#backBtn:hover, :-webkit-any-link:hover {
   background-color: black;
 }
 
-button:hover, #backBtn:hover, :-moz-any-link:hover {
+#backBtn:hover, :-moz-any-link:hover {
   background-color: black;
 }
 
-button:hover, #backBtn:hover, :any-link:hover {
+#backBtn:hover, :any-link:hover {
   background-color: black;
 }
 
-button #deleteAcct, #backBtn #deleteAcct, :-webkit-any-link #deleteAcct {
+#backBtn #deleteAcct, :-webkit-any-link #deleteAcct {
   background-color: #420202;
   color: whitesmoke;
   font-size: 20px;
@@ -155,7 +155,7 @@ button #deleteAcct, #backBtn #deleteAcct, :-webkit-any-link #deleteAcct {
   margin-top: -20px;
 }
 
-button #deleteAcct, #backBtn #deleteAcct, :-moz-any-link #deleteAcct {
+#backBtn #deleteAcct, :-moz-any-link #deleteAcct {
   background-color: #420202;
   color: whitesmoke;
   font-size: 20px;
@@ -163,7 +163,7 @@ button #deleteAcct, #backBtn #deleteAcct, :-moz-any-link #deleteAcct {
   margin-top: -20px;
 }
 
-button #deleteAcct, #backBtn #deleteAcct, :any-link #deleteAcct {
+#backBtn #deleteAcct, :any-link #deleteAcct {
   background-color: #420202;
   color: whitesmoke;
   font-size: 20px;
@@ -171,48 +171,48 @@ button #deleteAcct, #backBtn #deleteAcct, :any-link #deleteAcct {
   margin-top: -20px;
 }
 
-button:hover, #backBtn:hover, :-webkit-any-link:hover {
+#backBtn:hover, :-webkit-any-link:hover {
   background-color: black;
 }
 
-button:hover, #backBtn:hover, :-moz-any-link:hover {
+#backBtn:hover, :-moz-any-link:hover {
   background-color: black;
 }
 
-button:hover, #backBtn:hover, :any-link:hover {
+#backBtn:hover, :any-link:hover {
   background-color: black;
 }
 
-button #backBtn, #backBtn #backBtn, :-webkit-any-link #backBtn {
+#backBtn #backBtn, :-webkit-any-link #backBtn {
   font-size: 15px;
   margin-top: 40px;
   font-family: 'Cormorant', serif;
   color: #696868;
 }
 
-button #backBtn, #backBtn #backBtn, :-moz-any-link #backBtn {
+#backBtn #backBtn, :-moz-any-link #backBtn {
   font-size: 15px;
   margin-top: 40px;
   font-family: 'Cormorant', serif;
   color: #696868;
 }
 
-button #backBtn, #backBtn #backBtn, :any-link #backBtn {
+#backBtn #backBtn, :any-link #backBtn {
   font-size: 15px;
   margin-top: 40px;
   font-family: 'Cormorant', serif;
   color: #696868;
 }
 
-button:hover, #backBtn:hover, :-webkit-any-link:hover {
+#backBtn:hover, :-webkit-any-link:hover {
   background-color: black;
 }
 
-button:hover, #backBtn:hover, :-moz-any-link:hover {
+#backBtn:hover, :-moz-any-link:hover {
   background-color: black;
 }
 
-button:hover, #backBtn:hover, :any-link:hover {
+#backBtn:hover, :any-link:hover {
   background-color: black;
 }
 /*# sourceMappingURL=Account.css.map */

@@ -41,18 +41,18 @@ class Selection extends Component {
                 <a href='https://astro.cafeastrology.com/natal.php' target="_blank"><img height='100px' width='50px' src='https://pngimg.com/uploads/moon/moon_PNG19.png'/></a>
                 </div>
                 <div id='allButtons'>
-                <Link to='/selection/Aries'><h2>Aries</h2><img src='https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Aries.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Taurus'><h2>Taurus</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Taurus.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Gemini'><h2>Gemini</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Gemini.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Cancer'><h2>Cancer</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Cancer.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Leo'><h2>Leo</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Leo.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Virgo'><h2>Virgo</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Virgo.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Libra'><h2>Libra</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Libra.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Scorpio'><h2>Scorpio</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Scorpio.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Sagittarius'><h2>Sagittarius</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Sagittarius.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Capricorn'><h2>Capricorn</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Capricorn.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Aquarius'><h2>Aquarius</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Aquarius.png&r=255&g=255&b=255'/></Link>
-                <Link to='/selection/Pisces'><h2>Pisces</h2><img src= 'https://flaticons.net/gd/makefg.php?i=icons/Signs/Astro-Pisces.png&r=255&g=255&b=255'/></Link>
+                <Link to='/selection/Aries'><h2>Aries</h2><img src='https://www.iconsdb.com/icons/preview/white/aries-2-xl.png'/></Link>
+                <Link to='/selection/Taurus'><h2>Taurus</h2><img src= 'https://www.iconsdb.com/icons/preview/white/taurus-2-xl.png'/></Link>
+                <Link to='/selection/Gemini'><h2>Gemini</h2><img src= 'https://www.iconsdb.com/icons/preview/white/gemini-2-xl.png'/></Link>
+                <Link to='/selection/Cancer'><h2>Cancer</h2><img src= 'https://www.iconsdb.com/icons/preview/white/cancer-2-xxl.png'/></Link>
+                <Link to='/selection/Leo'><h2>Leo</h2><img src= 'https://www.iconsdb.com/icons/preview/white/leo-2-xxl.png'/></Link>
+                <Link to='/selection/Virgo'><h2>Virgo</h2><img src= 'https://www.iconsdb.com/icons/preview/white/virgo-2-xl.png'/></Link>
+                <Link to='/selection/Libra'><h2>Libra</h2><img src= 'https://www.iconsdb.com/icons/preview/white/libra-2-xl.png'/></Link>
+                <Link to='/selection/Scorpio'><h2>Scorpio</h2><img src= 'https://www.iconsdb.com/icons/preview/white/scorpio-2-xl.png'/></Link>
+                <Link to='/selection/Sagittarius'><h2>Sagittarius</h2><img src= 'https://www.iconsdb.com/icons/preview/white/sagittarius-2-xl.png'/></Link>
+                <Link to='/selection/Capricorn'><h2>Capricorn</h2><img src= 'https://www.iconsdb.com/icons/preview/white/capricorn-2-xl.png'/></Link>
+                <Link to='/selection/Aquarius'><h2>Aquarius</h2><img src= 'https://www.iconsdb.com/icons/preview/white/aquarius-2-xl.png'/></Link>
+                <Link to='/selection/Pisces'><h2>Pisces</h2><img src= 'https://www.iconsdb.com/icons/preview/white/pisces-2-xxl.png'/></Link>
 
                 {/* <Link to='/selection/gemini'><img src= 'https://image.flaticon.com/icons/svg/2647/2647386.svg'/></Link>
                 <Link to='/selection/cancer'><img src= 'https://image.flaticon.com/icons/svg/2647/2647357.svg'/></Link>
