@@ -84,12 +84,12 @@ class Authentication extends Component {
                             <option value={11}>Aquarius</option>
                             <option value={12}>Pisces</option>
                         </select>
-                        </div>
-                        </div>
-                        </section>
                         <div  class='authDiv2' >
                         <button class='authBtn2' onClick={this.handleClickRegister}>Register</button>
                         </div>
+                        </div>
+                        </div>
+                        </section>
                         </div>
         )
     }
