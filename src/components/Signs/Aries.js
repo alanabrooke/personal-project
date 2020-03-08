@@ -20,15 +20,15 @@ import '../Signs/signStyles.css'
             )
         })
           return(
-              <div id='full'>
-              <h1 id='zodiac'>Aries</h1>
+              <div class='full'>
+              <h1 class='zodiac'>Aries</h1>
             {mappedSuggs[0]}
-            <h4 id='signDsc'>
+            <h4 class='signDsc'>
             Aries are known for being very free-spirited, but also having a bit of a temper. Fighting games like Mortal Kombat, Tekken, and Street Fighter would help release stress build-up. 
             </h4>
-                <div id='back'>
+                <div class='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
-            <Link to='/selection'><button>Back to Selection</button></Link>
+            <Link to='/selection'><button class='backBtn'>Back to Selection</button></Link>
             </div>        
             </div>
         )

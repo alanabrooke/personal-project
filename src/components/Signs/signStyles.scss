@@ -1,4 +1,4 @@
-// #signDsc {
+// .signDsc {
 //     background-color: rgba(105, 104, 104, 0.404);
 //     font-family: 'Cormorant', serif;
 //    letter-spacing: 1.5px;//     font-size: 35px;
@@ -17,7 +17,7 @@
 $transColor : rgba(105, 104, 104, 0.404);
 $textColor : rgb(184, 184, 184);
 
-#zodiac {
+.zodiac {
     font-family: 'Roboto Slab', serif;
     display: flex;
     justify-content: center;
@@ -25,14 +25,14 @@ $textColor : rgb(184, 184, 184);
     font-size: 40px;
  
 }
-#full {
+.full {
     display:flex;
     justify-content: center;
     flex-direction: column;
     color: $textColor;
     align-items:center;
 }
-#signDsc {
+.signDsc {
     background-color: rgba(105, 104, 104, 0.404);
     font-family: 'Roboto Slab', serif;
     letter-spacing: 1.5px;    
@@ -48,15 +48,15 @@ $textColor : rgb(184, 184, 184);
     border-radius: 2px;
     text-decoration-color: $textColor;
 }
-#choice {
+.choice {
     font-family: 'Roboto Slab', serif;
 }
 
-#selected {
+.selected {
     display:flex;
     justify-content: center;
 }
-#details {
+.details {
     background-color: none;
     // text-align: center;
     display: flex;

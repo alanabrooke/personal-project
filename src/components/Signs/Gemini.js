@@ -19,13 +19,13 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
             )
         })
           return(
-              <div id='full'>
-            <h1 id='zodiac'>Gemini</h1>
+              <div class='full'>
+            <h1 class='zodiac'>Gemini</h1>
             {mappedSuggs[2]}
-            <h4 id='signDsc'>
+            <h4 class='signDsc'>
             Geminis are known for their defined personality, meaning they are able to enjoy many different types of entertainment, including video games! Any genre of game would suit you, Gemini, but some good recommendations are Grand Theft Auto or the Fallout series!
                 </h4>
-                <div id='back'>
+                <div class='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>
             </div>

@@ -1,4 +1,4 @@
-#zodiac {
+.zodiac {
   font-family: 'Roboto Slab', serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,7 +10,7 @@
   font-size: 40px;
 }
 
-#full {
+.full {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@
           align-items: center;
 }
 
-#signDsc {
+.signDsc {
   background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Roboto Slab', serif;
   letter-spacing: 1.5px;
@@ -47,11 +47,11 @@
           text-decoration-color: #b8b8b8;
 }
 
-#choice {
+.choice {
   font-family: 'Roboto Slab', serif;
 }
 
-#selected {
+.selected {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +60,7 @@
           justify-content: center;
 }
 
-#details {
+.details {
   background-color: none;
   display: -webkit-box;
   display: -ms-flexbox;

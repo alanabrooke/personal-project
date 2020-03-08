@@ -1,4 +1,4 @@
-.test {
+.editAcct {
   font-family: 'Roboto Slab', serif;
   color: #b8b8b8;
   display: -webkit-box;
@@ -37,6 +37,7 @@ input {
   border-radius: 2px;
   background-color: rgba(105, 104, 104, 0.404);
   border-color: black;
+  font-size: 25px;
 }
 
 .editInput {
@@ -44,8 +45,19 @@ input {
   margin-top: 10px;
 }
 
+.back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .backBtn {
   border-radius: 1px;
+  background-color: rgba(105, 104, 104, 0.404);
+  color: #b8b8b8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,26 +65,18 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
+  color: #b8b8b8;
   border-width: 2px;
-  border-color: black;
   padding: 8px;
   font-size: 12px;
+  border: none;
 }
 
 .backBtn:hover {
   background-color: black;
 }
 
-.backBtn .profileImg, .backBtn .backBtn, .backBtn .deleteAcct {
-  background-color: rgba(105, 104, 104, 0.404);
-  font-family: 'Roboto Slab', serif;
-  letter-spacing: 1.5px;
-  color: black;
-  margin-bottom: -20px;
-  margin-top: -10px;
-}
-
-.backBtn .profileImg {
+.profileImg {
   margin-bottom: -70px;
   margin-top: 30px;
   background-color: rgba(105, 104, 104, 0.404);
@@ -80,11 +84,11 @@ input {
   color: #696868;
 }
 
-.backBtn:hover {
+.profileImg:hover {
   background-color: black;
 }
 
-.backBtn .deleteAcct {
+.deleteAcct {
   background-color: #420202;
   color: whitesmoke;
   font-size: 20px;
@@ -93,11 +97,21 @@ input {
   border-color: none;
 }
 
-.backBtn:hover {
+.deleteAcct:hover {
   background-color: black;
 }
 
-.backBtn .backDiv {
-  color: red;
+button {
+  background-color: rgba(105, 104, 104, 0.404);
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  color: #b8b8b8;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: black;
+  border-width: .5px;
+  border-color: white;
 }
 /*# sourceMappingURL=Account.css.map */

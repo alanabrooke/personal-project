@@ -1,18 +1,13 @@
 
-// #acctButtons {
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    width: 200px;
-//    height: 100px;
-// } 
 $transColor : rgba(105, 104, 104, 0.404);
 $textColor : rgb(184, 184, 184);
-.test {
+
+.editAcct {
    font-family: 'Roboto Slab', serif;
    color: $textColor;
    display: flex;
    justify-content: center;
+
 }
 .accountSet {
    display: flex;
@@ -29,35 +24,49 @@ input {
    border-radius: 2px;
    background-color:rgba(105, 104, 104, 0.404);
    border-color: black;
+   font-size: 25px;
    // margin-bottom: -60px;
 }
 .editInput {
    margin-bottom: -90px;
    margin-top: 10px;
+
+}
+.back {
+   // color: red;
+   display:flex;
+   justify-content: center;
 }
 .backBtn { 
    border-radius: 1px;
    // color: rgba(105, 104, 104, 0.404);
+   background-color: $transColor;
+   color: $textColor;
    display: flex;
    justify-content: center;
    text-decoration: none;
+   color: $textColor;
    border-width: 2px;
-   border-color: black;
+   // border-color: black;
    padding: 8px;
    font-size: 12px;
-   &:hover {
+   border: none;
+
+
+      &:hover {
       background-color: black;
 
    // margin-bottom: -20px;
 }
-.profileImg, .backBtn, .deleteAcct {
-   background-color: rgba(105, 104, 104, 0.404);
-   font-family: 'Roboto Slab', serif;
-   letter-spacing: 1.5px;
-   color: black;
-   margin-bottom: -20px;
-   margin-top: -10px;
 }
+// .profileImg, .backBtn, .deleteAcct {
+//    background-color: rgba(105, 104, 104, 0.404);
+//    font-family: 'Roboto Slab', serif;
+//    letter-spacing: 1.5px;
+//    color: black;
+//    margin-bottom: -20px;
+//    margin-top: -10px;
+// }
 .profileImg {
    margin-bottom: -70px;
    margin-top: 30px;
@@ -65,10 +74,11 @@ input {
    font-size: 15px;
    // border-color: whitesmoke;
    color: rgb(105, 104, 104);
-}
+
    &:hover {
       background-color: black;
    // border-width: 10px;
+}
 }
 
 
@@ -79,14 +89,26 @@ input {
    font-weight: bold;
    margin-top: -20px;
    border-color: none;
-   // border-color: whitesmoke;
-   // color: rgb(105, 104, 104);
-}
+
    &:hover {
       background-color: black;
-   // border-width: 10px;
-}
-.backDiv {
-  color:red;
 }
 }
+
+button {
+   background-color: $transColor;
+   font-family: 'Roboto Slab', serif;
+   text-align: center;
+   color: $textColor;
+   padding: 10px;
+   // border:none;
+   // align-items: center;
+   // border: $transColor;
+   &:hover {
+      background-color: black;
+      border-width: .5px;
+      border-color: white;
+  
+}
+}
+

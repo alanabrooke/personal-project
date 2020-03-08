@@ -59,19 +59,19 @@ if( window.cloudinary ) {
 }
 return(
             <div>
-                <h1 id='test'> Edit Account Info </h1>
-                <div id= 'accountSet'>
-                <input id='editInput' placeholder='E-mail'></input>
-                <input id='editInput' placeholder='Username'></input>
-                <input id='editInput' placeholder='New Password'></input>
-                <input id='editInput' placeholder='Confirm New Password'></input>
+                <h1 class='editAcct'> Edit Account Info </h1>
+                <div class= 'accountSet'>
+                <input class='editInput' placeholder='E-mail'></input>
+                <input class='editInput' placeholder='Username'></input>
+                <input class='editInput' placeholder='New Password'></input>
+                <input class='editInput' placeholder='Confirm New Password'></input>
 
-                {/* <div id='acctBtns'> */}
-                <button id='profileImg' onClick={ () => widget.open() }>Upload/Add Profile Image</button>
-                <button id= 'deleteAcct' onClick={this.handleDelete}>DELETE ACCOUNT</button>
+                {/* <div class='acctBtns'> */}
+                <button class='profileImg' onClick={ () => widget.open() }>Upload/Add Profile Image</button>
+                <button class= 'deleteAcct' onClick={this.handleDelete}>DELETE ACCOUNT</button>
                 </div>
-                <div id='backDiv'>
-                <button onClick={this.handleBack} id='backBtn'>Back to Selection</button>
+                <div class='back'>
+                <button onClick={this.handleBack}>Back to Selection</button>
             </div>
             </div>
             // </div>
