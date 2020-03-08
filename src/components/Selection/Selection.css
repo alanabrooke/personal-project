@@ -13,8 +13,7 @@ img {
 }
 
 img:hover {
-  background-color: rgba(138, 138, 138, 0.096);
-  border-radius: 100px;
+  background-color: rgba(105, 104, 104, 0.404);
 }
 
 nav {
@@ -54,6 +53,10 @@ nav {
   margin: -40px;
 }
 
+#moon Link {
+  font-family: 'Roboto Slab', serif;
+}
+
 #logout, #logoutLink, #account {
   height: 40px;
   background: none;
@@ -72,10 +75,9 @@ nav {
           justify-content: space-evenly;
   font-size: 18px;
   text-decoration: none;
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 400;
   letter-spacing: 1.5px;
-  color: #696868;
 }
 
 #logout:hover, #logoutLink:hover, #account:hover {
@@ -105,19 +107,27 @@ nav {
           justify-content: center;
 }
 
-h2, h1 {
+#signChoose {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #696868;
+  color: #979797;
   text-align: center;
   padding-top: 20px;
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   margin-top: 7px;
   letter-spacing: 1.5px;
   font-size: 25px;
+}
+
+a {
+  background-color: none;
+}
+
+a:hover {
+  background-color: rgba(105, 104, 104, 0.404);
 }
 /*# sourceMappingURL=Selection.css.map */

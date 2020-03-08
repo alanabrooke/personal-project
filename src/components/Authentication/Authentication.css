@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif|Martel|Roboto|Spartan:200,300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100&display=swap");
+#title {
+  font-size: 70px;
+  letter-spacing: 3px;
+  margin-bottom: 13px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 h3, h4, input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,9 +24,9 @@ h3, h4, input {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 10px;
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   letter-spacing: 1.5px;
-  color: #696868;
+  color: rgba(255, 255, 255, 0.63);
   margin-top: -2px;
   font-size: larger;
 }
@@ -26,13 +42,6 @@ h3, h4, input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#title {
-  font-size: 70px;
-  letter-spacing: 3px;
-  margin-bottom: 13px;
-  font-family: 'Cormorant', serif;
 }
 
 body {
@@ -80,7 +89,7 @@ body {
 }
 
 button {
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   color: #696868;
   border-radius: 2px;
   letter-spacing: 1.5px;
@@ -107,7 +116,7 @@ select {
   border-color: transparent;
   color: #696868;
   background-color: rgba(105, 104, 104, 0.404);
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   letter-spacing: 1.5px;
   margin-top: -20px;
   margin-left: 8px;
@@ -116,7 +125,7 @@ select {
 
 input {
   font-size: large;
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   letter-spacing: 1.5px;
 }
 /*# sourceMappingURL=Authentication.css.map */

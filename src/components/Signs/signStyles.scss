@@ -14,20 +14,35 @@
 //     width: 60%;
 //     color: rgb(105, 104, 104)
 // }
+$transColor : rgba(105, 104, 104, 0.404);
+$textColor : rgb(151, 151, 151);
 
+#zodiac {
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+    color: $textColor;
+    font-size: 40px;
+ 
+}
 #signDsc {
     background-color: rgba(105, 104, 104, 0.404);
-    font-family: 'Cormorant', serif;
+    font-family: 'Roboto Slab', serif;
    letter-spacing: 1.5px;    
    font-size: 35px;
+   font-style: oblique;
     display:flex;
     text-align: center;
-    padding: 30px;
     justify-content: center;
+    padding: 30px;
     width: 70%;
     border-radius: 7px;
-    
+    text-decoration-color: $textColor;
 
+}
+#selected {
+    display:flex;
+    justify-content: center;
 }
 #details {
     background-color: none;

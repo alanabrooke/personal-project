@@ -1,16 +1,10 @@
-$primaryBtn : rgb(105, 104, 104);
-
-// #bg { 
-//     background-image: url(${bg});
-
-
+$transColor : rgba(105, 104, 104, 0.404);
+$textColor : rgb(151, 151, 151);
 img {
-    // background: rgba(0, 0, 0, 0.096);
-
 
     &:hover {
-        background-color: rgba(138, 138, 138, 0.096);
-        border-radius: 100px;
+        background-color: $transColor;
+        // border-radius: 100px;
     
     }
     padding: 40px;
@@ -23,7 +17,7 @@ img {
     flex-wrap: wrap;
 }
 nav {
-    background-color: rgba(105, 104, 104, 0.404);
+    background-color: $transColor;
     height: 70px;
     width: 100%;
     display:flex;
@@ -41,7 +35,9 @@ nav {
     width: 90px;
     height: 90px;
     margin: -40px;
-    
+    }
+    Link {
+        font-family: 'Roboto Slab', serif;
     }
 }
 #logout, #logoutLink,  #account {
@@ -57,10 +53,10 @@ nav {
     // margin-right: 50px;
     font-size: 18px;
     text-decoration: none;
-    font-family: 'Cormorant', serif;
+    font-family: 'Roboto Slab', serif;
     font-weight: 400;
  letter-spacing: 1.5px;
-    color: $primaryBtn;
+    // color: $primaryBtn;
         &:hover {
             background-color: black;
             
@@ -71,29 +67,29 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap; 
-    
-
-    // margin: 20px;
 
 }
 #backButton{
     display: flex;
     justify-content: center;
 }
-// #back {
-//     display: flex;
-//     justify-content: center;
-// }
-h2, h1{
+
+#signChoose{
     display: flex;
     justify-content: center;
-    color: $primaryBtn;
+    color: $textColor ;
     text-align: center;
     padding-top: 20px;
-    font-family: 'Cormorant', serif;
+    font-family: 'Roboto Slab', serif;
     margin-top: 7px;
    letter-spacing: 1.5px;
     font-size: 25px;
-    // font-weight: lighter;
+
+}
+a {
+    background-color: none;
+    &:hover {
+        background-color: $transColor;
+    }
 }
 

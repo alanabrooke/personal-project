@@ -1,3 +1,7 @@
+#test {
+  font-family: 'Roboto Slab', serif;
+}
+
 #accountSet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,7 +90,7 @@ input {
 
 #backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct, :-webkit-any-link #profile_image, :-webkit-any-link #backBtn, :-webkit-any-link #deleteAcct {
   background-color: rgba(105, 104, 104, 0.404);
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   letter-spacing: 1.5px;
   color: black;
   margin-bottom: -20px;
@@ -95,7 +99,7 @@ input {
 
 #backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct, :-moz-any-link #profile_image, :-moz-any-link #backBtn, :-moz-any-link #deleteAcct {
   background-color: rgba(105, 104, 104, 0.404);
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   letter-spacing: 1.5px;
   color: black;
   margin-bottom: -20px;
@@ -104,7 +108,7 @@ input {
 
 #backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct, :any-link #profile_image, :any-link #backBtn, :any-link #deleteAcct {
   background-color: rgba(105, 104, 104, 0.404);
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   letter-spacing: 1.5px;
   color: black;
   margin-bottom: -20px;
@@ -153,6 +157,7 @@ input {
   font-size: 20px;
   font-weight: bold;
   margin-top: -20px;
+  border-color: none;
 }
 
 #backBtn #deleteAcct, :-moz-any-link #deleteAcct {
@@ -161,6 +166,7 @@ input {
   font-size: 20px;
   font-weight: bold;
   margin-top: -20px;
+  border-color: none;
 }
 
 #backBtn #deleteAcct, :any-link #deleteAcct {
@@ -169,6 +175,7 @@ input {
   font-size: 20px;
   font-weight: bold;
   margin-top: -20px;
+  border-color: none;
 }
 
 #backBtn:hover, :-webkit-any-link:hover {
@@ -186,21 +193,21 @@ input {
 #backBtn #backBtn, :-webkit-any-link #backBtn {
   font-size: 15px;
   margin-top: 40px;
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   color: #696868;
 }
 
 #backBtn #backBtn, :-moz-any-link #backBtn {
   font-size: 15px;
   margin-top: 40px;
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   color: #696868;
 }
 
 #backBtn #backBtn, :any-link #backBtn {
   font-size: 15px;
   margin-top: 40px;
-  font-family: 'Cormorant', serif;
+  font-family: 'Roboto Slab', serif;
   color: #696868;
 }
 

@@ -1,31 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant:300i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif|Martel|Roboto|Spartan:200,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100&display=swap');
+$primaryColor: rgba(255, 255, 255, 0.63);
 
+#title {
+    font-size: 70px;
+    letter-spacing: 3px;
+    margin-bottom: 13px;
+    // font-family: 'Cormorant', serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    color: $primaryColor;
+    display: flex;
+    justify-content: center;
+ }
 h3, h4, input {
     // color: purple;
     display: flex;
     justify-content: center;
     padding-top: 10px;
-    font-family: 'Cormorant', serif;
+    font-family: 'Roboto Slab', serif;
     letter-spacing: 1.5px;
-    // font-size: 40px; 
-    color: rgb(105, 104, 104);
+    // font-size: 10px; 
+    color: $primaryColor;
     margin-top: -2px;
     font-size: larger;
-    
 }
-
 #authentication {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-#title {
-    font-size: 70px;
-    letter-spacing: 3px;
-    margin-bottom: 13px;
-    font-family: 'Cormorant', serif;
- }
 body {
     background-image: url(https://thumbs.gfycat.com/FeistyJaggedBuffalo-size_restricted.gif);
     // background-color: black;
@@ -58,7 +63,7 @@ body {
     margin: 5px;
 }
 button {
-    font-family: 'Cormorant', serif;
+    font-family: 'Roboto Slab', serif;
     color: rgb(105, 104, 104);
     border-radius: 2px;
     letter-spacing: 1.5px;
@@ -80,8 +85,8 @@ select{
     justify-content: center;
     border-color: transparent;
     color: rgb(105, 104, 104);
-    background-color: rgba(105, 104, 104, 0.404);;
-    font-family: 'Cormorant', serif;
+    background-color: rgba(105, 104, 104, 0.404);
+    font-family: 'Roboto Slab', serif;
     letter-spacing: 1.5px;
     margin-top: -20px;
     margin-left: 8px;
@@ -92,7 +97,7 @@ input {
     // background-color: rgb(34, 31, 36);
     // text-decoration-color: rgb(0, 0, 0);
     font-size: large;
-    font-family: 'Cormorant', serif;
+    font-family: 'Roboto Slab', serif;
     letter-spacing: 1.5px;
 
 }
