@@ -23,26 +23,35 @@ $textColor : rgb(184, 184, 184);
     justify-content: center;
     color: $textColor;
     font-size: 40px;
-    margin-bottom: -30px;
- 
+    
+}
+#full {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    color: $textColor;
+    align-items:center;
 }
 #signDsc {
     background-color: rgba(105, 104, 104, 0.404);
     font-family: 'Roboto Slab', serif;
-   letter-spacing: 1.5px;    
-   font-size: 35px;
-   font-style: oblique;
+    letter-spacing: 1.5px;    
+    font-size: 25px;
+    font-style: oblique;
     display:flex;
     text-align: center;
-    justify-content: center;
+    // justify-content: center;
+    align-items: center;
     padding: 30px;
     width: 70%;
-    border-radius: 7px;
+    // height: 40vh;
+    border-radius: 2px;
     text-decoration-color: $textColor;
 }
 #choice {
     font-family: 'Roboto Slab', serif;
 }
+
 #selected {
     display:flex;
     justify-content: center;

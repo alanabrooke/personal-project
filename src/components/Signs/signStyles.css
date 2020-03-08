@@ -8,25 +8,41 @@
           justify-content: center;
   color: #b8b8b8;
   font-size: 40px;
-  margin-bottom: -30px;
+}
+
+#full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #b8b8b8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #signDsc {
   background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Roboto Slab', serif;
   letter-spacing: 1.5px;
-  font-size: 35px;
+  font-size: 25px;
   font-style: oblique;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px;
   width: 70%;
-  border-radius: 7px;
+  border-radius: 2px;
   -webkit-text-decoration-color: #b8b8b8;
           text-decoration-color: #b8b8b8;
 }

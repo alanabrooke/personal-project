@@ -16,7 +16,7 @@
           justify-content: center;
 }
 
-h3, h4, input {
+h3, input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -20,7 +20,7 @@ import '../Signs/signStyles.css'
             )
         })
           return(
-              <div>
+              <div id='full'>
               <h1 id='zodiac'>Aries</h1>
             {mappedSuggs[0]}
             <h4 id='signDsc'>

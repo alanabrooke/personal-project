@@ -19,7 +19,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
             )
         })
           return(
-              <div>
+              <div id='full'>
             <h1 id='zodiac'>Virgo</h1>
             {mappedSuggs[5]}
             <h4 id='signDsc'>
