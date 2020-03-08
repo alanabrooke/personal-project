@@ -1,8 +1,15 @@
-#test {
+.test {
   font-family: 'Roboto Slab', serif;
+  color: #b8b8b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#accountSet {
+.accountSet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,12 +39,12 @@ input {
   border-color: black;
 }
 
-#editInput {
+.editInput {
   margin-bottom: -90px;
   margin-top: 10px;
 }
 
-#backBtn {
+.backBtn {
   border-radius: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,11 +59,11 @@ input {
   font-size: 12px;
 }
 
-#backBtn:hover {
+.backBtn:hover {
   background-color: black;
 }
 
-#backBtn #profile_image, #backBtn #backBtn, #backBtn #deleteAcct {
+.backBtn .profileImg, .backBtn .backBtn, .backBtn .deleteAcct {
   background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Roboto Slab', serif;
   letter-spacing: 1.5px;
@@ -65,7 +72,7 @@ input {
   margin-top: -10px;
 }
 
-#backBtn #profile_image {
+.backBtn .profileImg {
   margin-bottom: -70px;
   margin-top: 30px;
   background-color: rgba(105, 104, 104, 0.404);
@@ -73,11 +80,11 @@ input {
   color: #696868;
 }
 
-#backBtn:hover {
+.backBtn:hover {
   background-color: black;
 }
 
-#backBtn #deleteAcct {
+.backBtn .deleteAcct {
   background-color: #420202;
   color: whitesmoke;
   font-size: 20px;
@@ -86,18 +93,11 @@ input {
   border-color: none;
 }
 
-#backBtn:hover {
+.backBtn:hover {
   background-color: black;
 }
 
-#backBtn #backBtn {
-  font-size: 15px;
-  margin-top: 40px;
-  font-family: 'Roboto Slab', serif;
-  color: #696868;
-}
-
-#backBtn:hover {
-  background-color: black;
+.backBtn .backDiv {
+  color: red;
 }
 /*# sourceMappingURL=Account.css.map */

@@ -33,10 +33,13 @@ class Account extends Component {
         this.props.getUser()
     }
 
-    handleDelete = () => {
+    handleDelete() {
     this.props.deleteUser()
     }
 
+    handleBack = () => {
+        this.props.history.push('/selection')
+    }
 
     render() {
         const { REACT_APP_cloudName, REACT_APP_cloudinary_unsigned } = process.env;
@@ -64,11 +67,11 @@ return(
                 <input id='editInput' placeholder='Confirm New Password'></input>
 
                 {/* <div id='acctBtns'> */}
-                <button id='profile_image' onClick={ () => widget.open() }>Upload/Add Profile Image</button>
+                <button id='profileImg' onClick={ () => widget.open() }>Upload/Add Profile Image</button>
                 <button id= 'deleteAcct' onClick={this.handleDelete}>DELETE ACCOUNT</button>
                 </div>
-                <div>
-                <Link to='/selection'><button id='backBtn'>Back to Selection</button></Link>
+                <div id='backDiv'>
+                <button onClick={this.handleBack} id='backBtn'>Back to Selection</button>
             </div>
             </div>
             // </div>

@@ -6,10 +6,15 @@
 //    width: 200px;
 //    height: 100px;
 // } 
-#test {
+$transColor : rgba(105, 104, 104, 0.404);
+$textColor : rgb(184, 184, 184);
+.test {
    font-family: 'Roboto Slab', serif;
+   color: $textColor;
+   display: flex;
+   justify-content: center;
 }
-#accountSet {
+.accountSet {
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -26,11 +31,11 @@ input {
    border-color: black;
    // margin-bottom: -60px;
 }
-#editInput {
+.editInput {
    margin-bottom: -90px;
    margin-top: 10px;
 }
-#backBtn { 
+.backBtn { 
    border-radius: 1px;
    // color: rgba(105, 104, 104, 0.404);
    display: flex;
@@ -45,7 +50,7 @@ input {
 
    // margin-bottom: -20px;
 }
-#profile_image, #backBtn, #deleteAcct {
+.profileImg, .backBtn, .deleteAcct {
    background-color: rgba(105, 104, 104, 0.404);
    font-family: 'Roboto Slab', serif;
    letter-spacing: 1.5px;
@@ -53,7 +58,7 @@ input {
    margin-bottom: -20px;
    margin-top: -10px;
 }
-#profile_image {
+.profileImg {
    margin-bottom: -70px;
    margin-top: 30px;
    background-color: rgba(105,104,104, 0.404);
@@ -67,7 +72,7 @@ input {
 }
 
 
-#deleteAcct {
+.deleteAcct {
    background-color: rgb(66, 2, 2);
    color: whitesmoke;
    font-size: 20px;
@@ -81,14 +86,7 @@ input {
       background-color: black;
    // border-width: 10px;
 }
-
-#backBtn {
-   font-size: 15px;
-   margin-top:40px;
-   font-family: 'Roboto Slab', serif;
-   color: rgb(105, 104, 104);
-}
-   &:hover {
-      background-color: black;
+.backDiv {
+  color:red;
 }
 }

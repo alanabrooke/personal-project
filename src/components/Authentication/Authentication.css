@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant:300i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif|Martel|Roboto|Spartan:200,300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100&display=swap");
-#title {
+.title {
   font-size: 70px;
   letter-spacing: 3px;
   margin-bottom: 13px;
@@ -29,9 +29,10 @@ h3, input {
   color: rgba(255, 255, 255, 0.63);
   margin-top: -2px;
   font-size: larger;
+  text-align: center;
 }
 
-#authentication {
+.authentication {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,10 +46,10 @@ h3, input {
 }
 
 body {
-  background-image: url(https://im2.ezgif.com/tmp/ezgif-2-8484e77bd36a.gif);
+  background-image: url(https://thumbs.gfycat.com/FeistyJaggedBuffalo-size_restricted.gif);
 }
 
-#loginRegister {
+.loginRegister {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,11 +59,11 @@ body {
   margin-top: -20px;
 }
 
-#submit {
+.submit {
   margin: -10px;
 }
 
-#authButton {
+.authDiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +76,7 @@ body {
   margin-top: -5px;
 }
 
-#authButton2 {
+.authDiv2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +89,7 @@ body {
   margin: 5px;
 }
 
-button {
+.authBtn {
   font-family: 'Roboto Slab', serif;
   color: #696868;
   border-radius: 2px;
@@ -98,7 +99,7 @@ button {
   background-color: rgba(105, 104, 104, 0.404);
 }
 
-button:hover {
+.authBtn:hover {
   background-color: black;
 }
 

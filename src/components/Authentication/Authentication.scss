@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100&display=swap');
 $primaryColor: rgba(255, 255, 255, 0.63);
 
-#title {
+.title {
     font-size: 70px;
     letter-spacing: 3px;
     margin-bottom: 13px;
@@ -25,29 +25,30 @@ h3, input {
     color: $primaryColor;
     margin-top: -2px;
     font-size: larger;
+    text-align: center;
 }
-#authentication {
+.authentication {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 body {
-    background-image: url(https://im2.ezgif.com/tmp/ezgif-2-8484e77bd36a.gif);
+    background-image: url(https://thumbs.gfycat.com/FeistyJaggedBuffalo-size_restricted.gif);
     // background-color: black;
 }
-#loginRegister {
+.loginRegister {
     display: flex;
     justify-content: center;
     margin-top: -20px;
 }
-#submit {
+.submit {
     margin: -10px;
 
 }
 // button {
 //     font-size: 35px;
 // }
-#authButton {
+.authDiv {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -55,14 +56,15 @@ body {
     margin-top: -5px;
  
 }
-#authButton2 {
+.authDiv2 {
     display: flex;
     justify-content: center;
     align-content: center;
     padding: 15px;
     margin: 5px;
+    
 }
-button {
+.authBtn {
     font-family: 'Roboto Slab', serif;
     color: rgb(105, 104, 104);
     border-radius: 2px;

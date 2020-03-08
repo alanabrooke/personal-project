@@ -43,10 +43,10 @@ class Authentication extends Component {
 
     render() {
         return(
-            <div id='authentication'>
-                    <h1 id="title">ZODIGAMES</h1>
+            <div class='authentication'>
+                    <h1 class="title">ZODIGAMES</h1>
                     <h3>Login</h3>
-                    <div  id='loginRegister'>
+                    <div  class='loginRegister'>
                 <section>
                         {/* <h4>Username</h4> */}
                         <input type="text" name="username" placeholder='Username' onChange={this.handleChange}/>
@@ -54,11 +54,11 @@ class Authentication extends Component {
                         <input type="password" name='password' placeholder='Password' onChange={this.handleChange}/>
                         </section>
                         </div>
-                        <div  id='authButton' >
-                        <Link to='/selection'><button>Submit</button></Link>
+                        <div  class='authDiv' >
+                        <Link to='/selection'><button class='authBtn'>Submit</button></Link>
                         </div>
                             <h3>Don't have an account yet? Register here!</h3>
-                            <div id='loginRegister'>
+                            <div class='loginRegister'>
                         <section>
                         {/* <h4>Email</h4> */}
                     <input type='text' name='email' placeholder='E-mail' onChange={this.handleChange}/>
@@ -68,8 +68,8 @@ class Authentication extends Component {
                         <input type="password" name='password' placeholder='Password' onChange={this.handleChange}/>
                         <div></div>
                         <h4>Zodiac Sign</h4>
-                        <div  id='signs'>
-                        <select onChange={this.handleChange}name="zodiac_id">
+                        <div  class='signs'>
+                        <select onChange={this.handleChange}name="zodiac_class">
                             <option>Please select your sign</option>
                             <option value={1}>Aries</option>
                             <option value={2}>Taurus</option>
@@ -87,8 +87,8 @@ class Authentication extends Component {
                         </div>
                         </section>
                         </div>
-                        <div  id='authButton2' >
-                        <button onClick={this.handleClickRegister}>Register</button>
+                        <div  class='authDiv2' >
+                        <button class='authBtn' onClick={this.handleClickRegister}>Register</button>
                         </div>
                         </div>
         )
