@@ -20,7 +20,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Leo</h1>
+            <h1 id='zodiac'>Leo</h1>
             {mappedSuggs[4]}
             <h4 id='signDsc'>
             Leos are the poster child for optimism and upbeat personalities. Because of this, they can enjoy competitive games, even if they aren't the best, because they thrive on socialization rather than being a top player. Games that would suit Leos are first-person shooters, like the Call of Duty franchise, Battlefield, The Division, and/or Bulletstorm.

@@ -20,7 +20,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Cancer</h1>
+            <h1 id='zodiac'>Cancer</h1>
             {mappedSuggs[3]}
             <h4 id='signDsc'>
             Cancer is recognized as a very intelligent sign, making Educational games a great genre for you! Trying out games that use math or strategy would be great for you. Try checking out games like The Oregon Trail, Portal 2, or LittleBIGPlanet! 

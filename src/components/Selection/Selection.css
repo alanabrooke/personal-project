@@ -1,19 +1,38 @@
 img {
-  padding: 40px;
-  margin: -10px;
+  padding: 30px;
+  margin: 10px;
+  margin-top: -23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-radius: 2px;
-  width: 90px;
+  width: 95px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 img:hover {
   background-color: rgba(105, 104, 104, 0.404);
+  border-radius: 100px;
+  height: 90px;
+  width: 90px;
+}
+
+:-webkit-any-link {
+  text-decoration: none;
+  color: #979797;
+}
+
+:-moz-any-link {
+  text-decoration: none;
+  color: #979797;
+}
+
+:any-link {
+  text-decoration: none;
+  color: #979797;
 }
 
 nav {
@@ -44,17 +63,37 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: none;
+}
+
+#moon #moonBtn {
+  height: 130px;
+  width: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #moon img {
   background: none;
   width: 90px;
   height: 90px;
-  margin: -40px;
+  margin-top: -15px;
 }
 
-#moon Link {
+#moon img:hover {
+  height: 95px;
+  width: 95px;
+}
+
+#choice {
   font-family: 'Roboto Slab', serif;
+  color: #979797;
+  margin: 10px;
+  font-size: 18px;
 }
 
 #logout, #logoutLink, #account {
@@ -76,6 +115,7 @@ nav {
   font-size: 18px;
   text-decoration: none;
   font-family: 'Roboto Slab', serif;
+  color: #979797;
   font-weight: 400;
   letter-spacing: 1.5px;
 }
@@ -96,6 +136,9 @@ nav {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  margin-top: 5px;
 }
 
 #backButton {
@@ -123,11 +166,19 @@ nav {
   font-size: 25px;
 }
 
-a {
-  background-color: none;
-}
-
-a:hover {
-  background-color: rgba(105, 104, 104, 0.404);
+#signChoose2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #979797;
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Roboto Slab', serif;
+  margin-top: -15px;
+  letter-spacing: 1.5px;
+  font-size: 15px;
 }
 /*# sourceMappingURL=Selection.css.map */

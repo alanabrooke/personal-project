@@ -20,7 +20,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Capricorn</h1>
+            <h1 id='zodiac'>Capricorn</h1>
             {mappedSuggs[9]}
             <h4 id='signDsc'>
             Capricorns have a personality that is greatly defined by being realistic in terms of logic, but enjoying creative visuals. Because of this, Virtual Reality games would be great for you! Video games like this include Beat Saber, VR Chat, Virtual Rabbids, and Tetris Effect.

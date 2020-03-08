@@ -20,7 +20,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Gemini</h1>
+            <h1 id='zodiac'>Gemini</h1>
             {mappedSuggs[2]}
             <h4 id='signDsc'>
             Geminis are known for their defined personality, meaning they are able to enjoy many different types of entertainment, including video games! Any genre of game would suit you, Gemini, but some good recommendations are Grand Theft Auto or the Fallout series!

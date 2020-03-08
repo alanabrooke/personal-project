@@ -20,7 +20,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Aquarius</h1>
+            <h1 id='zodiac'>Aquarius</h1>
             {mappedSuggs[10]}
             <h4 id='signDsc'>
             Aquarians are frequently represented as having a very spontaneous personality. If you enjoy games that can be playing using strategy OR played on a whim, games like Elder Scrolls Online, Runescape, and Diablo would be great for you.

@@ -20,7 +20,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Libra</h1>
+            <h1 id='zodiac'>Libra</h1>
             {mappedSuggs[6]}
             <h4 id='signDsc'>
             Libras are known for being the most dependable sign. That being said, they also love to socialize (over video games) and play games that they can be recognized in for their efforts and ability to carry a team. Games that suit you, Libra, are Destiny, Borderlands, and Halo!

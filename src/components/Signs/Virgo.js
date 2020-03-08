@@ -20,7 +20,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Virgo</h1>
+            <h1 id='zodiac'>Virgo</h1>
             {mappedSuggs[5]}
             <h4 id='signDsc'>
             Virgos tend to have an exceptional ability to notice even the smallest details. If you pay close attention to graphics in games, then open-world games would be perfect for you. This includes games such as Skyrim, The Witcher, and Red Dead Redemption (RDR2 has incredible graphics and the optional cinematic view for cutscenes!).

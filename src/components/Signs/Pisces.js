@@ -20,7 +20,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Pisces</h1>
+            <h1 id='zodiac'>Pisces</h1>
             {mappedSuggs[11]}
             <h4 id='signDsc'>
             Pisces tend to be quite competitive, along with being fairly popular socially. Online sports games such as FIFA, NBA 2K, Madden, and Rocket League would be suitable for your personality! 

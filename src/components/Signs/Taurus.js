@@ -20,7 +20,7 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
         })
           return(
               <div>
-            <h1>Taurus</h1>
+            <h1 id='zodiac'>Taurus</h1>
             {mappedSuggs[1]}
             <h4 id='signDsc'>
                 Us Taureans have a persistent attitude, which also means we can be rather stubborn. Survival games may suit you best due to the fact that consistency is key.
