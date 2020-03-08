@@ -17,6 +17,9 @@ class Selection extends Component {
       handleLogout = () => {
         this.props.history.push('/')
     }
+    handleAccount = () => {
+      this.props.history.push('/account')
+    }
 
 
     // handleUser() {
@@ -29,7 +32,7 @@ class Selection extends Component {
                 <div path='true'>
             <nav>
                 <button id='logout' onClick={this.handleLogout}>Logout</button>
-              <button path to='/account' id='account'>Account</button>
+              <button onClick={this.handleAccount} id='account'>Account</button>
             </nav>
                 <h2 id='signChoose'>
                     Choose your sign.
