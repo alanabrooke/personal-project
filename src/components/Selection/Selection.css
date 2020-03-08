@@ -121,6 +121,7 @@ nav {
 
 #logout:hover, #account:hover {
   background-color: black;
+  border-color: white;
 }
 
 .allButtons {

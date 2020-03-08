@@ -107,6 +107,7 @@ button {
   text-align: center;
   color: #b8b8b8;
   padding: 10px;
+  border-color: black;
 }
 
 button:hover {

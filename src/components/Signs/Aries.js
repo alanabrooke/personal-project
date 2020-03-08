@@ -28,7 +28,7 @@ import '../Signs/signStyles.css'
             </h4>
                 <div class='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
-            <Link to='/selection'><button class='backBtn'>Back to Selection</button></Link>
+            <Link to='/selection'><button>Back to Selection</button></Link>
             </div>        
             </div>
         )
