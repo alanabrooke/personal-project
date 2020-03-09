@@ -14,7 +14,8 @@ img {
 }
 
 img:hover {
-  background-color: rgba(105, 104, 104, 0.404);
+  -webkit-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+          box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
   border-radius: 100px;
   height: 90px;
   width: 90px;
@@ -75,18 +76,22 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 13px;
 }
 
 .moon img {
   background: none;
   width: 90px;
   height: 90px;
-  margin-top: -15px;
 }
 
 .moon img:hover {
   height: 100px;
   width: 100px;
+  background: none;
+  -webkit-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+          box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
 }
 
 .choice {
@@ -122,6 +127,8 @@ nav {
 #logout:hover, #account:hover {
   background-color: black;
   border-color: white;
+  -webkit-box-shadow: 0 0px 13px rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0px 13px rgba(255, 255, 255, 0.4);
 }
 
 .allButtons {

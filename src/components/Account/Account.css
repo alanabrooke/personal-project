@@ -89,29 +89,31 @@ input {
 }
 
 .deleteAcct {
-  background-color: #420202;
+  background-color: rgba(66, 2, 2, 0.493);
   color: whitesmoke;
   font-size: 20px;
-  font-weight: bold;
   margin-top: -20px;
   border-color: none;
 }
 
 .deleteAcct:hover {
-  background-color: black;
+  background-color: #420202;
 }
 
 button {
-  background-color: rgba(105, 104, 104, 0.404);
   font-family: 'Roboto Slab', serif;
   text-align: center;
   color: #b8b8b8;
   padding: 10px;
+  background-color: rgba(105, 104, 104, 0.404);
   border-color: black;
 }
 
 button:hover {
   background-color: black;
   border-color: white;
+  color: white;
+  -webkit-box-shadow: 0 0px 13px rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0px 13px rgba(255, 255, 255, 0.4);
 }
 /*# sourceMappingURL=Account.css.map */

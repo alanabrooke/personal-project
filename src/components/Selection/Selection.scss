@@ -15,7 +15,8 @@ img {
 
     &:hover {
         // margin-left: 10px;
-        background-color: $transColor;
+        // background-color: $transColor;
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
         border-radius: 100px;
         height: 90px;
         width: 90px;
@@ -47,19 +48,24 @@ nav {
     .moonBtn {
         height: 130px;
         width: 130px;
-        // padding:30px;
+        // padding: none;
         display:flex;
         justify-content: center;
+        margin-bottom: 5px;
+        margin-top: 13px;
     }
-    
     img {
         background: none;
+        // padding: none;
     width: 90px;
     height: 90px;
-    margin-top: -15px;
+    // margin-top: -15px;
+   
     &:hover {
         height:100px;
         width: 100px;
+        background: none;
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
        
     }
     }
@@ -92,10 +98,13 @@ nav {
     color: $textColor;
     font-weight: 400;
  letter-spacing: 1.5px;
-    // color: $primaryBtn;
-        &:hover {
+ // color: $primaryBtn;
+ &:hover {
+     // opacity: 0;
+    //  transition: 0.3s; 
             background-color: black;
             border-color: white;
+            box-shadow: 0 0px 13px rgba(255, 255, 255, 0.4);
             
         }
 }
