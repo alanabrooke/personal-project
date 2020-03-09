@@ -1,5 +1,5 @@
 img {
-  padding: 30px;
+  padding: 35px;
   margin: 10px;
   margin-top: -23px;
   display: -webkit-box;
@@ -64,7 +64,6 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: none;
 }
 
 .moon .moonBtn {

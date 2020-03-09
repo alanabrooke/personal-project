@@ -75,18 +75,21 @@ input {
 //    margin-top: -10px;
 // }
 .profileImg {
-   margin-bottom: -70px;
-   margin-top: 30px;
+   display: flex;
+   align-content: center;
+   margin-bottom: -90px;
+   margin-top: 80px;
+   border-radius: 1px;
    background-color: rgba(105,104,104, 0.404);
-   font-size: 15px;
+   font-size: 11px;
    // border-color: whitesmoke;
    color: rgb(105, 104, 104);
 
-   &:hover {
-      background-color: black;
+   }
+   // &:hover {
+   //    background-color: black;
    // border-width: 10px;
-}
-}
+// }}
 
 
 .deleteAcct {
@@ -94,7 +97,7 @@ input {
    color: whitesmoke;
    font-size: 20px;
    // font-weight: bold;
-   margin-top: -20px;
+   margin-top: 15px;
    border-color: none;
 
    &:hover {

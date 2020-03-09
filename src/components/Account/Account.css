@@ -77,22 +77,24 @@ input {
 }
 
 .profileImg {
-  margin-bottom: -70px;
-  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: -90px;
+  margin-top: 80px;
+  border-radius: 1px;
   background-color: rgba(105, 104, 104, 0.404);
-  font-size: 15px;
+  font-size: 11px;
   color: #696868;
-}
-
-.profileImg:hover {
-  background-color: black;
 }
 
 .deleteAcct {
   background-color: rgba(66, 2, 2, 0.493);
   color: whitesmoke;
   font-size: 20px;
-  margin-top: -20px;
+  margin-top: 15px;
   border-color: none;
 }
 

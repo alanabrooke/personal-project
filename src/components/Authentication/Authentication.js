@@ -22,7 +22,8 @@ class Authentication extends Component {
     }
     
     handleClickLogin = () => {
-        this.props.loginUser(this.props.username, this.props.password).then(() => {
+        this.props.loginUser(this.props.username, this.props.password)
+        .then(() => {
             this.props.history.push('/selection')
         }).catch(error => {
             alert('Incorrect username or password. Please try again.')
@@ -30,12 +31,14 @@ class Authentication extends Component {
     }
     
     handleClickRegister = () => {
-        this.props.registerUser(this.props.email, this.props.username, this.props.password, this.props.zodiac_id).then(() => {
-            this.props.loginUser(this.props.username, this.props.password)
+        this.props.registerUser(this.props.email, this.props.username, this.props.password, this.props.zodiac_id)
+        .then(() => {
+            this.props.history.push('/selection')
+            // this.props.loginUser(this.props.username, this.props.password)
         }).catch(error => {
             console.log(error)
             console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id, this.props.email)
-            alert('You have been registered! Please log in to proceed.')
+            // alert('You have been registered! Please log in to proceed.')
             window.location.reload();
         })
     }
@@ -53,7 +56,7 @@ class Authentication extends Component {
                         {/* <h4>Password</h4> */}
                         <input type="password" name='password' placeholder='Password' onChange={this.handleChange}/>
                         <div  class='authDiv' >
-                        <Link to='/selection'><button class='authBtn'>Submit</button></Link>
+                        <button class='authBtn'>Submit</button>
                         </div>
                         </div>
                         </section>

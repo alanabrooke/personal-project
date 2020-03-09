@@ -67,7 +67,11 @@ return(
                 <input class='editInput' placeholder='Confirm New Password'></input>
 
                 {/* <div class='acctBtns'> */}
-                <button class='profileImg glow' onClick={ () => widget.open() }>Upload/Add Profile Image</button>
+                <div class='holder'>
+
+                </div>
+                
+                <input type="file" class="profileImg" name="myfile"/>
                 <button class= 'deleteAcct' onClick={this.handleDelete}>DELETE ACCOUNT</button>
                 </div>
                 <div class='back'>

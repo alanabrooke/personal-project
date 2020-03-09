@@ -27,10 +27,12 @@ $textColor : rgb(184, 184, 184);
 }
 .full {
     display:flex;
-    justify-content: center;
+    text-align: center;
     flex-direction: column;
     color: $textColor;
     align-items:center;
+    font-family: 'Roboto Slab', serif;
+
 }
 .signDsc {
     background-color: rgba(105, 104, 104, 0.404);
