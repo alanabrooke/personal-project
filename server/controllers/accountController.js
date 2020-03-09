@@ -1,11 +1,3 @@
-//get
-async function getUser(req, res) {
-  if (req.session.user) {
-      res.status(200).json(req.session.user)
-  } else {
-      res.sendStatus(404)
-  }
-}
 
 
 const logout = (req, res) => {
@@ -39,7 +31,6 @@ async function deleteUser(req, res) {
 }
 
 module.exports = {
-  getUser,
   logout,
   editUser,
   deleteUser

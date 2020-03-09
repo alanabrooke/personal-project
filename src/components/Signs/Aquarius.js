@@ -19,13 +19,13 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
             )
         })
           return(
-            <div class='full'>
-            <h1 class='zodiac'>Aquarius</h1>
+            <div className='full'>
+            <h1 className='zodiac'>Aquarius</h1>
             {mappedSuggs[10]}
-            <h4 class='signDsc'>
+            <h4 className='signDsc'>
             Aquarians are frequently represented as having a very spontaneous personality. If you enjoy games that can be playing using strategy OR played on a whim, games like Elder Scrolls Online, Runescape, and Diablo would be great for you.
             </h4>    
-                <div class='back'>
+                <div className='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>
             </div>

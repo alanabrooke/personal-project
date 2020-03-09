@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {withRouter, Link} from 'react-router-dom';
 import { connect } from 'react-redux'
-import {updateState, resetFields, registerUser, loginUser} from '../../redux/authReducer'
+import {updateState, resetFields, registerUser, loginUser, getUser} from '../../redux/authReducer'
 import '../Authentication/Authentication.css';
 
 class Authentication extends Component {
@@ -26,6 +26,7 @@ class Authentication extends Component {
         .then(() => {
             this.props.history.push('/selection')
         }).catch(error => {
+            console.log(this.props.username, this.props.password)
             alert('Incorrect username or password. Please try again.')
         })
     }
@@ -34,11 +35,11 @@ class Authentication extends Component {
         this.props.registerUser(this.props.email, this.props.username, this.props.password, this.props.zodiac_id)
         .then(() => {
             this.props.history.push('/selection')
-            // this.props.loginUser(this.props.username, this.props.password)
+            this.props.loginUser(this.props.username, this.props.password)
         }).catch(error => {
             console.log(error)
-            console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id, this.props.email)
-            // alert('You have been registered! Please log in to proceed.')
+            // console.log(this.props.email, this.props.username, this.props.password, this.props.zodiac_id, this.props.email)
+            alert('You have been registered! Please log in to proceed.')
             window.location.reload();
         })
     }
@@ -46,23 +47,23 @@ class Authentication extends Component {
 
     render() {
         return(
-            <div class='authentication'>
-                    <h1 class="title">ZODIGAMES</h1>
-                <section class='reg'>
-                    <h3 class='text'>Login</h3>
-                    <div  class='loginRegister'>
+            <div className='authentication'>
+                    <h1 className="title">ZODIGAMES</h1>
+                <section className='reg'>
+                    <h3 className='text'>Login</h3>
+                    <div  className='loginRegister'>
                         {/* <h4>Username</h4> */}
                         <input type="text" name="username" placeholder='Username' onChange={this.handleChange}/>
                         {/* <h4>Password</h4> */}
                         <input type="password" name='password' placeholder='Password' onChange={this.handleChange}/>
-                        <div  class='authDiv' >
-                        <button class='authBtn'>Submit</button>
+                        <div  className='authDiv' >
+                        <button onClick={this.handleClickLogin} className='authBtn'>Submit</button>
                         </div>
                         </div>
                         </section>
-                        <section class='reg2'>
-                            <h3 class='text'>Don't have an account yet? Register here!</h3>
-                            <div class='loginRegister2'>
+                        <section className='reg2'>
+                            <h3 className='text'>Don't have an account yet? Register here!</h3>
+                            <div className='loginRegister2'>
                         {/* <h4>Email</h4> */}
                     <input type='text' name='email' placeholder='E-mail' onChange={this.handleChange}/>
                             {/* <h4>Username</h4> */}
@@ -70,7 +71,7 @@ class Authentication extends Component {
                         {/* <h4>Password</h4> */}
                         <input type="password" name='password' placeholder='Password' onChange={this.handleChange}/>
                         <div></div>
-                        <div  class='signs'>
+                        <div  className='signs'>
                         <h4>Zodiac Sign</h4>
                         <select onChange={this.handleChange}name="zodiac_class">
                             <option>Please select your sign</option>
@@ -87,8 +88,8 @@ class Authentication extends Component {
                             <option value={11}>Aquarius</option>
                             <option value={12}>Pisces</option>
                         </select>
-                        <div  class='authDiv2' >
-                        <button class='authBtn2' onClick={this.handleClickRegister}>Register</button>
+                        <div  className='authDiv2' >
+                        <button className='authBtn2' onClick={this.handleClickRegister}>Register</button>
                         </div>
                         </div>
                         </div>

@@ -12,6 +12,7 @@ const initialState = {
 //constants
 const UPDATE_STATE = 'UPDATE_STATE';
 const REGISTER_USER = 'REGISTER_USER';
+const GET_USER = 'GET_USER';
 const LOGIN_USER = 'LOGIN_USER';
 const RESET_FIELDS = 'RESET_FIELDS';
 
@@ -29,17 +30,23 @@ export const resetFields = () => {
 }
 
 export const registerUser = (email, username, password, zodiac_id) => {
-return {
-    type: REGISTER_USER,
-    payload: axios.post('/auth/register', {
-        email,
-        username,
-        password,
-        zodiac_id,
-    })
-}
+    return {
+        type: REGISTER_USER,
+        payload: axios.post('/auth/register', {
+            email,
+            username,
+            password,
+            zodiac_id,
+        })
+    }
 }
 
+export const getUser = () => {
+    return {
+        type: GET_USER,
+        payload: axios.get('/auth/user')
+    }
+}
 export const loginUser = (username,password) => {
    return { type: LOGIN_USER,
     payload: axios.post('/auth/login', {
@@ -61,6 +68,21 @@ export default function authReducer(state = initialState, action) {
             return {
                 ...state
             }
+
+        case `${GET_USER}_PENDING`:
+            return {
+                ...state,
+                loading: true
+                }
+    case `${GET_USER}_FULFILLED`:
+            return {
+                ...state,
+                user_id: payload.data.user_id,
+                email: payload.data.email,
+                username: payload.data.username,
+                zodiac_id: payload.data.zodiac_id,
+                loading: false
+                }
         case `${REGISTER_USER}_PENDING`:
             return {
                 ...state,

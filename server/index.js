@@ -15,7 +15,7 @@ const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET, SENDGRID_API_KEY} = proce
 const authentication = require('./controllers/authController')
 const account = require('./controllers/accountController')
 const {getSuggestions} = require('./controllers/suggestionsController')
-const {getUser, editUser, logout, deleteUser} = require('./controllers/accountController')
+// const {getUser, editUser, logout, deleteUser} = require('./controllers/accountController')
 
 massive(CONNECTION_STRING)
 .then(db => {
@@ -42,6 +42,7 @@ app.use(
 
     
 //auth
+app.get('/auth/user', authentication.getUser )
 app.post('/auth/register', authentication.register);
 app.post('/auth/login', authentication.login);
 app.post('/account/logout', account.logout);
@@ -50,7 +51,6 @@ app.post('/account/logout', account.logout);
 app.get('/api/suggestions', getSuggestions);
 
 //account
-app.get('/account/user', account.getUser )
 app.put('/account/edit/${user_id}', account.editUser)
 app.delete('/account/delete/${user_id}', account.deleteUser)
 

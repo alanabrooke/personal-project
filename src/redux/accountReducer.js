@@ -10,19 +10,10 @@ const initialState = {
 }
 
 const UPDATE_STATE = 'UPDATE_STATE';
-const GET_USER = 'GET_USER';
 const EDIT_USER = 'EDIT_USER';
 const LOGOUT_USER = 'LOGOUT_USER';
 const DELETE_USER = 'DELETE_USER';
 
-
-
-export const getUser = () => {
-    return {
-        type: GET_USER,
-        payload: axios.get('/account/user')
-    }
-}
 
 
 export function editUser({ user_id, username, email, zodiac_id }) {
@@ -63,20 +54,7 @@ export default function accountReducer(state = initialState, action) {
             ...state,
             ...payload
         }
-        case `${GET_USER}_PENDING`:
-            return {
-                ...state,
-                loading: true
-            }
-        case `${GET_USER}_FULFILLED`:
-            return {
-                ...state,
-                user_id: payload.data.user_id,
-                email: payload.data.email,
-                username: payload.data.username,
-                zodiac_id: payload.data.zodiac_id,
-                loading: false
-            }
+
         case `${EDIT_USER}_PENDING`: 
               return{
                   ...state,

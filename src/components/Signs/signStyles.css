@@ -1,5 +1,5 @@
 .zodiac {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,12 +23,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .signDsc {
   background-color: rgba(105, 104, 104, 0.404);
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   letter-spacing: 1.5px;
   font-size: 25px;
   font-style: oblique;

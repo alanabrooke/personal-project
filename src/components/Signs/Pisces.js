@@ -19,13 +19,13 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
             )
         })
           return(
-              <div class='full'>
-            <h1 class='zodiac'>Pisces</h1>
+              <div className='full'>
+            <h1 className='zodiac'>Pisces</h1>
             {mappedSuggs[11]}
-            <h4 class='signDsc'>
+            <h4 className='signDsc'>
             Pisces tend to be quite competitive, along with being fairly popular socially. Online sports games such as FIFA, NBA 2K, Madden, and Rocket League would be suitable for your personality! 
             </h4>    
-                <div class='back'>
+                <div className='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>
             </div>

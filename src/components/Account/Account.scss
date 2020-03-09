@@ -35,7 +35,7 @@ input {
    // margin-bottom: -60px;
 }
 .editInput {
-   margin-bottom: -90px;
+   margin-bottom: -200px;
    margin-top: 10px;
 
 }
@@ -47,6 +47,7 @@ input {
 .backBtn { 
    border-radius: 1px;
    // color: rgba(105, 104, 104, 0.404);
+   // width: 150px;
    background-color: $transColor;
    color: $textColor;
    display: flex;
@@ -77,8 +78,8 @@ input {
 .profileImg {
    display: flex;
    align-content: center;
-   margin-bottom: -90px;
-   margin-top: 80px;
+   // margin-bottom: -40px;
+   // margin-top: 80px;
    border-radius: 1px;
    background-color: rgba(105,104,104, 0.404);
    font-size: 11px;
@@ -97,29 +98,43 @@ input {
    color: whitesmoke;
    font-size: 20px;
    // font-weight: bold;
-   margin-top: 15px;
+   // margin-top: 25px;
+   margin-bottom: -30px;
+
    border-color: none;
 
    &:hover {
       background-color: rgb(66, 2, 2);
-}
+   }
 }
 
+
+.submitAcct {
+   // margin-bottom: -10px;
+   background-color: rgba(137, 43, 226, 0.082);
+}
+.holder {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   // justify-content: space-between;
+}
 button {
    font-family: 'Roboto Slab', serif;
    text-align: center;
    color: $textColor;
    padding: 10px;
+   // width: 150px;
    // border:none;
    background-color: $transColor;
    border-color:black;
-
+   
    &:hover {
       background-color: black;
       border-color: white;
       color:white;
       box-shadow: 0 0px 13px rgba(255, 255, 255, 0.4);
-  
+      
 }
 }
 

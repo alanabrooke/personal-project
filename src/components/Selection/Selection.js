@@ -29,28 +29,28 @@ class Selection extends Component {
                 <button id='logout' onClick={this.handleLogout}>Logout</button>
               <button onClick={this.handleAccount} id='account'>Account</button>
             </nav>
-                <h2 class='signChoose'>
+                <h2 className='signChoose'>
                     Choose your sign.
                     Don't forget to check your sun, moon, and rising!
                 </h2>
-                <h2 class='signChoose2'>(Don't know your sign(s)? Click the moon below!)
+                <h2 className='signChoose2'>(Don't know your sign(s)? Click the moon below!)
                 </h2>
-                <div class='moon' >
-                <a class='moonBtn' href='https://astro.cafeastrology.com/natal.php' target="_blank"><img height='100px' width='50px' src='https://pngimg.com/uploads/moon/moon_PNG19.png'/></a>
+                <div className='moon' >
+                <a className='moonBtn' href='https://astro.cafeastrology.com/natal.php' target="_blank"><img height='100px' width='50px' src='https://pngimg.com/uploads/moon/moon_PNG19.png'/></a>
                 </div>
-                <div class='allButtons'>
-                <Link to='/selection/Aries'><h2 class='choice'>Aries <br/>(3/21-4/20)</h2><img src='https://www.iconsdb.com/icons/preview/white/aries-2-xl.png'/></Link>
-                <Link to='/selection/Taurus'><h2 class='choice'>Taurus <br/>(4/21-5/20)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/taurus-2-xl.png'/></Link>
-                <Link to='/selection/Gemini'><h2 class='choice'>Gemini <br/>(5/21-6/21)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/gemini-2-xl.png'/></Link>
-                <Link to='/selection/Cancer'><h2 class='choice'>Cancer <br/>(6/22-7/22)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/cancer-2-xxl.png'/></Link>
-                <Link to='/selection/Leo'><h2 class='choice'>Leo <br/>(7/23-8/23)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/leo-2-xxl.png'/></Link>
-                <Link to='/selection/Virgo'><h2 class='choice'>Virgo <br/>(8/24-9/23)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/virgo-2-xl.png'/></Link>
-                <Link to='/selection/Libra'><h2 class='choice'>Libra <br/>(9/24-10/23)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/libra-2-xl.png'/></Link>
-                <Link to='/selection/Scorpio'><h2 class='choice'>Scorpio <br/>(10/24-11/22)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/scorpio-2-xl.png'/></Link>
-                <Link to='/selection/Sagittarius'><h2 class='choice'>Sagittarius <br/>(11/23-12/21)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/sagittarius-2-xl.png'/></Link>
-                <Link to='/selection/Capricorn'><h2 class='choice'>Capricorn <br/>(12/22-1/20)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/capricorn-2-xl.png'/></Link>
-                <Link to='/selection/Aquarius'><h2 class='choice'>Aquarius <br/>(1/21-2/18)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/aquarius-2-xl.png'/></Link>
-                <Link to='/selection/Pisces'><h2 class='choice'>Pisces <br/>(2/19-3/20)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/pisces-2-xxl.png'/></Link>
+                <div className='allButtons'>
+                <Link to='/selection/Aries'><h2 className='choice'>Aries <br/>(3/21-4/20)</h2><img src='https://www.iconsdb.com/icons/preview/white/aries-2-xl.png'/></Link>
+                <Link to='/selection/Taurus'><h2 className='choice'>Taurus <br/>(4/21-5/20)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/taurus-2-xl.png'/></Link>
+                <Link to='/selection/Gemini'><h2 className='choice'>Gemini <br/>(5/21-6/21)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/gemini-2-xl.png'/></Link>
+                <Link to='/selection/Cancer'><h2 className='choice'>Cancer <br/>(6/22-7/22)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/cancer-2-xxl.png'/></Link>
+                <Link to='/selection/Leo'><h2 className='choice'>Leo <br/>(7/23-8/23)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/leo-2-xxl.png'/></Link>
+                <Link to='/selection/Virgo'><h2 className='choice'>Virgo <br/>(8/24-9/23)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/virgo-2-xl.png'/></Link>
+                <Link to='/selection/Libra'><h2 className='choice'>Libra <br/>(9/24-10/23)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/libra-2-xl.png'/></Link>
+                <Link to='/selection/Scorpio'><h2 className='choice'>Scorpio <br/>(10/24-11/22)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/scorpio-2-xl.png'/></Link>
+                <Link to='/selection/Sagittarius'><h2 className='choice'>Sagittarius <br/>(11/23-12/21)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/sagittarius-2-xl.png'/></Link>
+                <Link to='/selection/Capricorn'><h2 className='choice'>Capricorn <br/>(12/22-1/20)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/capricorn-2-xl.png'/></Link>
+                <Link to='/selection/Aquarius'><h2 className='choice'>Aquarius <br/>(1/21-2/18)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/aquarius-2-xl.png'/></Link>
+                <Link to='/selection/Pisces'><h2 className='choice'>Pisces <br/>(2/19-3/20)</h2><img src= 'https://www.iconsdb.com/icons/preview/white/pisces-2-xxl.png'/></Link>
 
                 {/* <Link to='/selection/gemini'><img src= 'https://image.flaticon.com/icons/svg/2647/2647386.svg'/></Link>
                 <Link to='/selection/cancer'><img src= 'https://image.flaticon.com/icons/svg/2647/2647357.svg'/></Link>

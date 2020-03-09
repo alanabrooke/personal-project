@@ -19,13 +19,13 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
             )
         })
           return(
-              <div class='full'>
-            <h1 class='zodiac'>Sagittarius</h1>
+              <div className='full'>
+            <h1 className='zodiac'>Sagittarius</h1>
             {mappedSuggs[8]}
-            <h4 class='signDsc'>
+            <h4 className='signDsc'>
             Most people with Sagittarius in their chart are realists. Because of this trait, Sags tend to be a tad picky about video games, which is why mobile games are great for you. They are usually free to download. Meaning if you don't like them, deleting them is no big deal! Try starting with games like Stardew Valley, Minecraft, or Sims.
             </h4>
-                <div class='back'> 
+                <div className='back'> 
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>
             </div>
