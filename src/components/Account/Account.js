@@ -81,11 +81,12 @@ return(
                 <input className='editInput' placeholder='Username'></input>
                 <input className='editInput' placeholder='New Password'></input>
                 <input className='editInput' placeholder='Confirm New Password'></input>
-                <button className="profileImg" onClick={() => widget.open()}>Edit/Upload Profile Photo</button>
-
+                {/* <button className="profileImg" onClick={() => widget.open()}>Edit/Upload Profile Photo</button> */}
+                
                 {/* <div className='acctBtns'> */}
                 <div className='holder'>
 
+                <button name='profileImg' onClick={ () => widget.open() }>Upload Profile Image</button>
                 {/* <input type="file" className="profileImg" name="myfile"/> */}
                 <Link to='/auth/user'>
                 <button className= 'submitAcct' onClick={this.handleEditUser}>Save Changes</button>
