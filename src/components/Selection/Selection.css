@@ -8,6 +8,7 @@
   width: 95px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 40px;
 }
 
 .choice:hover {

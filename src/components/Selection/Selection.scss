@@ -9,6 +9,7 @@ $textColor : rgb(151, 151, 151);
     justify-content: space-around;
     width: 95px;
     flex-wrap: wrap;
+    padding: 40px;
 
 
     &:hover {
@@ -17,7 +18,7 @@ $textColor : rgb(151, 151, 151);
         border-radius: 100px;
         // border-radius: 2px;
         border-width: 10px;
-        
+
         height: 90px;
         width: 90px;
 
