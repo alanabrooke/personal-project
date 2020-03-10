@@ -28,9 +28,9 @@ class Account extends Component {
 
      
     
-     handleDelete() {
-         this.props.deleteUser()
-        }
+    //  handleDelete() {
+    //      this.props.deleteUser()
+    //     }
         
     handleBack = () => {
         this.props.history.push('/selection')
