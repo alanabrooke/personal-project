@@ -94,7 +94,7 @@ nav {
           box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
 }
 
-#logout, #account {
+#logout, #account, #about {
   height: 40px;
   background: none;
   border-color: rgba(0, 0, 0, 0.568);
@@ -117,7 +117,7 @@ nav {
   letter-spacing: 1.5px;
 }
 
-#logout:hover, #account:hover {
+#logout:hover, #account:hover, #about:hover {
   background-color: black;
   border-color: white;
   -webkit-box-shadow: 0 0px 13px rgba(255, 255, 255, 0.4);

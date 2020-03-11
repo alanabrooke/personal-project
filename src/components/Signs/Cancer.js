@@ -25,6 +25,25 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
             <h4 className='signDsc'>
             Cancer is recognized as a very intelligent sign, making Educational games a great genre for you! Trying out games that use math or strategy would be great for you. Try checking out games like The Oregon Trail, Portal 2, or LittleBIGPlanet! 
             </h4>
+            <h2>
+            <br/>
+            Video game characters that embody your sign: <br/>
+            <br/>
+            Arthur Morgan - Red Dead Redemption II <br/>
+            <img id = 'pic' src= 'https://vignette.wikia.nocookie.net/deathbattlefanon/images/c/c2/ArthurMorgan.png/revision/latest/top-crop/width/360/height/360?cb=20190804092849'/> 
+            <br/>
+            <br/>
+            <br/>
+            Claire Redfield - Resident Evil II <br/>
+            <img id = 'pic' src= 'https://vignette.wikia.nocookie.net/capcomdatabase/images/f/f2/Resident_Evil_Revelations_2_Claire_Redfield_render_01_alpha.png/revision/latest/top-crop/width/360/height/450?cb=20191223081655'/>
+            <br/>
+            <br/>
+            <br/>
+            MacCready - Fallout 3 & 4 <br/>
+            <img id = 'pic' src= 'https://www.stickpng.com/assets/images/58a1f830c8dd3432c6fa81f1.png'/>
+            <br/>
+
+            </h2>
                 <div className='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>

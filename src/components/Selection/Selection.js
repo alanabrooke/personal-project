@@ -28,6 +28,7 @@ class Selection extends Component {
             <nav>
                 <button id='logout' onClick={this.handleLogout}>Logout</button>
               <button onClick={this.handleAccount} id='account'>Account</button>
+                <Link to ='/about'><button id='about'>About</button></Link> 
             </nav>
                 <h2 className='signChoose'>
                     Choose your sign.

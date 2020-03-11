@@ -24,7 +24,23 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
             {mappedSuggs[10]}
             <h4 className='signDsc'>
             Aquarians are frequently represented as having a very spontaneous personality. If you enjoy games that can be playing using strategy OR played on a whim, games like Elder Scrolls Online, Runescape, and Diablo would be great for you.
-            </h4>    
+            </h4> 
+            <h2 classId='picDiv'>
+            Video game characters that embody your sign: <br/>
+            <br/>
+            Lara Croft - Tomb Raider<br/>
+            <img id = 'pic' src= 'https://purepng.com/public/uploads/medium/purepng.com-lara-croft-tomb-raider-with-gunslara-croftlaracroftfictionaltomb-ridervideo-gametombraiderhighly-intelligentathletic-1701528614626fzclf.png'/> <br/>
+            <br/>
+            <br/>
+        
+            Tiny Tina - Borderlands <br/>
+            <img id = 'pic' src= 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4f445d94-8ef8-40aa-b68d-9da60b012052/d8f7uxq-c684d5e2-f2cd-4144-9621-ad3271d6f51e.png/v1/fill/w_1600,h_3333,strp/tiny_tina_by_xenoxeon_d8f7uxq-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzMzMyIsInBhdGgiOiJcL2ZcLzRmNDQ1ZDk0LThlZjgtNDBhYS1iNjhkLTlkYTYwYjAxMjA1MlwvZDhmN3V4cS1jNjg0ZDVlMi1mMmNkLTQxNDQtOTYyMS1hZDMyNzFkNmY1MWUucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5o7dw7SimCJjRrh20VeLIDAY0jqUVPmDZZC94WUN4SU'/> <br/>
+            <br/>
+            <br/>
+            Geralt of Rivia - The Witcher <br/>
+            <img id = 'pic' src= 'https://vignette.wikia.nocookie.net/p__/images/4/43/Geralt_of_Rivia.png/revision/latest?cb=20180213180539&path-prefix=protagonist'/>
+            <br/>
+            </h2>
                 <div className='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>

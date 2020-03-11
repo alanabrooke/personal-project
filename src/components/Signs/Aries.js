@@ -26,6 +26,22 @@ import '../Signs/signStyles.css'
             <h4 className='signDsc'>
             Aries are known for being very free-spirited, but also having a bit of a temper. Fighting games like Mortal Kombat, Tekken, and Street Fighter would help release stress build-up. 
             </h4>
+            <h2>
+            <br/>
+            Video game characters that embody your sign: <br/>
+            <br/>
+            D-va - Overwatch <br/>
+            <img id = 'pic' src= 'https://d1u1mce87gyfbn.cloudfront.net/hero/dva/full-portrait.png'/>
+            <br/>
+            <br/>
+            Lilith - Borderlands <br/>
+            <img id = 'pic' src= 'https://vignette.wikia.nocookie.net/all-worlds-alliance/images/d/d4/Lilithrender.png/revision/latest/scale-to-width-down/340?cb=20190704122447'/>
+            <br/>
+            <br/>
+            Undyne - Undertale  <br/>
+            <img id = 'pic' src= 'https://vignette.wikia.nocookie.net/p__/images/2/20/Undyne_%28Transparent_ver.%29/revision/latest/top-crop/width/360/height/450?cb=20170712012228&path-prefix=protagonist'/>
+            <br/>
+            </h2>
                 <div className='back'>
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>

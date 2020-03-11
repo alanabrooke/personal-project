@@ -1,3 +1,16 @@
+#picDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#pic {
+  height: 350px;
+  width: 270px;
+}
+
 .zodiac {
   font-family: "Roboto Slab", serif;
   display: -webkit-box;

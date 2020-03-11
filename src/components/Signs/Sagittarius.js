@@ -25,6 +25,25 @@ import { getSuggestions} from '../../redux/suggestionsReducer';
             <h4 className='signDsc'>
             Most people with Sagittarius in their chart are realists. Because of this trait, Sags tend to be a tad picky about video games, which is why mobile games are great for you. They are usually free to download. Meaning if you don't like them, deleting them is no big deal! Try starting with games like Stardew Valley, Minecraft, or Sims.
             </h4>
+            <h2>
+            <br/>
+            Video game characters that embody your sign: <br/>
+            <br/>
+            Trevor Philips - Grand Theft Auto V <br/>
+            <img id = 'pic' src= 'https://www.freepngimg.com/thumb/gta/20494-7-grand-theft-auto-v-transparent-background.png'/>
+            <br/>
+            <br/>
+            <br/>
+            Roxas - Kingdom Hearts <br/>
+            <img id = 'pic' src= 'https://www.khwiki.com/images/thumb/9/9d/Roxas_KHIII.png/350px-Roxas_KHIII.png'/>
+            <br/>
+            <br/>
+            <br/>
+            Junkrat - Overwatch <br/>
+            <img id = 'pic' src= 'https://gamepedia.cursecdn.com/overwatch_gamepedia/thumb/9/99/Junkrat-Portrait.png/286px-Junkrat-Portrait.png?version=c23334dae852756b575df8a32ea34708'/>
+            <br/>
+            
+            </h2>
                 <div className='back'> 
                     {/* <button onClick={this.handleClick}>Show Suggestions</button> */}
             <Link to='/selection'><button>Back to Selection</button></Link>
