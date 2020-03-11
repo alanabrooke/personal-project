@@ -4,7 +4,11 @@ const massive = require('massive')
 const app = express()
 const session = require('express-session')
 app.use(express.static('public'));
+app.use( express.static( `${__dirname}/../build` ) );
+
+
 // console.log(process.env.SESSION_SECRET)
+
 
 
 
